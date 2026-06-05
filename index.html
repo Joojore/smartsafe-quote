@@ -39,8 +39,6 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
 .cat-section:nth-of-type(6) .row-prod.expanded{background:#FEF2F2;}
 .cat-section:nth-of-type(7) .row-prod.expanded{background:#F5F3FF;}
 .row-prod.expanded td{border-bottom-color:transparent;}
-.row-detail{display:none;}
-.row-detail.expanded{display:table-row;}
 .row-detail td{padding:0 16px 20px 16px;border-bottom:2px solid #E0E0E0;}
 .detail-card{display:flex;gap:20px;padding:20px 24px;background:#EFF6FF;border-left:4px solid #1E3A5F;}
 .detail-info h3{color:#1E3A5F;}
@@ -88,14 +86,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
     <table>
       <thead><tr><th style="width:60px"></th><th style="width:80px">Код</th><th style="width:100px">Модель</th><th>Описание</th><th style="width:90px;text-align:right">Цена (USD)</th></tr></thead>
       <tbody>
-        <tr id="row-702020120" class="row-prod" data-ref="702020120">
+        <tr id="row-702020120" class="row-prod" data-ref="702020120" onclick="toggleDetail('702020120')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5xb8rvnqf6.webp" loading="lazy"></td>
           <td class="col-code">702020120</td>
           <td class="col-model"><span class="lnk" data-ref="702020120">WA613</span></td>
           <td class="col-name">WA613 无线3D非接触式四轮定位仪（欧规，轮毂夹版）  WA613 magnetic wireless 3D wheel aligner;Overseas standard configurati...</td>
           <td class="col-price">$5,000</td>
         </tr>
-        <tr id="det-702020120" class="row-detail">
+        <tr id="det-702020120" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -115,14 +113,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020121" class="row-prod" data-ref="702020121">
+        <tr id="row-702020121" class="row-prod" data-ref="702020121" onclick="toggleDetail('702020121')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5xb8rvnqf6.webp" loading="lazy"></td>
           <td class="col-code">702020121</td>
           <td class="col-model"><span class="lnk" data-ref="702020121">WA613</span></td>
           <td class="col-name">WA613 无线3D非接触式四轮定位仪（欧规，抱胎夹版） WA613 – Wireless 3D Non‑Contact Wheel Aligner; Overseas Standard Config...</td>
           <td class="col-price">$5,100</td>
         </tr>
-        <tr id="det-702020121" class="row-detail">
+        <tr id="det-702020121" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -142,14 +140,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020136" class="row-prod" data-ref="702020136">
+        <tr id="row-702020136" class="row-prod" data-ref="702020136" onclick="toggleDetail('702020136')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3gp0puxgn5.webp" loading="lazy"></td>
           <td class="col-code">702020136</td>
           <td class="col-model"><span class="lnk" data-ref="702020136">WA613F</span></td>
           <td class="col-name">WA613F 无线3D非接触式四轮定位仪（欧规，轮毂夹版）  WA613F magnetic wireless 3D wheel aligner;Overseas standard configura...</td>
           <td class="col-price">$5,000</td>
         </tr>
-        <tr id="det-702020136" class="row-detail">
+        <tr id="det-702020136" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -169,14 +167,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020141" class="row-prod" data-ref="702020141">
+        <tr id="row-702020141" class="row-prod" data-ref="702020141" onclick="toggleDetail('702020141')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3gp0puxgn5.webp" loading="lazy"></td>
           <td class="col-code">702020141</td>
           <td class="col-model"><span class="lnk" data-ref="702020141">WA613F</span></td>
           <td class="col-name">WA613F 无线3D非接触式四轮定位仪（欧规，抱胎夹版）  WA613F Magnetic wireless 3D wheel aligner; overseas standard configur...</td>
           <td class="col-price">$5,100</td>
         </tr>
-        <tr id="det-702020141" class="row-detail">
+        <tr id="det-702020141" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -196,14 +194,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020154" class="row-prod" data-ref="702020154">
+        <tr id="row-702020154" class="row-prod" data-ref="702020154" onclick="toggleDetail('702020154')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.232imxgieb.webp" loading="lazy"></td>
           <td class="col-code">702020154</td>
           <td class="col-model"><span class="lnk" data-ref="702020154">WA613</span></td>
           <td class="col-name">WA613四点式轮夹专用移动推车配置   WA613 Four-Point Wheel Clamp Dedicated Mobile Trolley Configuration</td>
           <td class="col-price">$245</td>
         </tr>
-        <tr id="det-702020154" class="row-detail">
+        <tr id="det-702020154" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -223,14 +221,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020155" class="row-prod" data-ref="702020155">
+        <tr id="row-702020155" class="row-prod" data-ref="702020155" onclick="toggleDetail('702020155')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1ow2w28r6c.webp" loading="lazy"></td>
           <td class="col-code">702020155</td>
           <td class="col-model"><span class="lnk" data-ref="702020155">WA613</span></td>
           <td class="col-name">WA613三点式轮夹专用移动推车配置   WA613 Three-Point Wheel Clamp Dedicated Mobile Trolley Configuration</td>
           <td class="col-price">$285</td>
         </tr>
-        <tr id="det-702020155" class="row-detail">
+        <tr id="det-702020155" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -250,14 +248,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020077" class="row-prod" data-ref="702020077">
+        <tr id="row-702020077" class="row-prod" data-ref="702020077" onclick="toggleDetail('702020077')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.7snuyibsyp.webp" loading="lazy"></td>
           <td class="col-code">702020077</td>
           <td class="col-model"><span class="lnk" data-ref="702020077">WA861</span></td>
           <td class="col-name">WA861 PRO 多工位自动升降3D四轮定位仪海外配置（含打印机）  WA861 PRO 3D wheel aligner (including printer）</td>
           <td class="col-price">$3,400</td>
         </tr>
-        <tr id="det-702020077" class="row-detail">
+        <tr id="det-702020077" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -277,14 +275,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020079" class="row-prod" data-ref="702020079">
+        <tr id="row-702020079" class="row-prod" data-ref="702020079" onclick="toggleDetail('702020079')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.7snuyibsyp.webp" loading="lazy"></td>
           <td class="col-code">702020079</td>
           <td class="col-model"><span class="lnk" data-ref="702020079">WA861</span></td>
           <td class="col-name">WA861 PRO 多工位自动升降3D四轮定位仪海外配置（含打印机+双屏）  WA861 PRO 3D wheel aligner (including printer+double screen）</td>
           <td class="col-price">$3,600</td>
         </tr>
-        <tr id="det-702020079" class="row-detail">
+        <tr id="det-702020079" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -304,14 +302,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020068" class="row-prod" data-ref="702020068">
+        <tr id="row-702020068" class="row-prod" data-ref="702020068" onclick="toggleDetail('702020068')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.73ulehoxp9.webp" loading="lazy"></td>
           <td class="col-code">702020068</td>
           <td class="col-model"><span class="lnk" data-ref="702020068">WA861</span></td>
           <td class="col-name">WA861多工位固定式3D四轮定位仪海外配置  WA861 3D wheel aligner</td>
           <td class="col-price">$2,300</td>
         </tr>
-        <tr id="det-702020068" class="row-detail">
+        <tr id="det-702020068" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -331,14 +329,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020069" class="row-prod" data-ref="702020069">
+        <tr id="row-702020069" class="row-prod" data-ref="702020069" onclick="toggleDetail('702020069')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.73ulehoxp9.webp" loading="lazy"></td>
           <td class="col-code">702020069</td>
           <td class="col-model"><span class="lnk" data-ref="702020069">WA861</span></td>
           <td class="col-name">WA861多工位固定式3D四轮定位仪海外配置（含打印机）  WA861 3D wheel aligner (including printer）</td>
           <td class="col-price">$2,500</td>
         </tr>
-        <tr id="det-702020069" class="row-detail">
+        <tr id="det-702020069" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -358,14 +356,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020070" class="row-prod" data-ref="702020070">
+        <tr id="row-702020070" class="row-prod" data-ref="702020070" onclick="toggleDetail('702020070')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.73ulehoxp9.webp" loading="lazy"></td>
           <td class="col-code">702020070</td>
           <td class="col-model"><span class="lnk" data-ref="702020070">WA861</span></td>
           <td class="col-name">WA861多工位固定式3D四轮定位仪海外配置（含双屏）  WA861 3D wheel aligner (including double screen）</td>
           <td class="col-price">$2,400</td>
         </tr>
-        <tr id="det-702020070" class="row-detail">
+        <tr id="det-702020070" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -385,14 +383,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020071" class="row-prod" data-ref="702020071">
+        <tr id="row-702020071" class="row-prod" data-ref="702020071" onclick="toggleDetail('702020071')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.73ulehoxp9.webp" loading="lazy"></td>
           <td class="col-code">702020071</td>
           <td class="col-model"><span class="lnk" data-ref="702020071">WA861</span></td>
           <td class="col-name">WA861多工位固定式3D四轮定位仪海外配置（含打印机+双屏）  WA861 3D wheel aligner (including printer+double screen）</td>
           <td class="col-price">$2,620</td>
         </tr>
-        <tr id="det-702020071" class="row-detail">
+        <tr id="det-702020071" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -412,14 +410,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020060" class="row-prod" data-ref="702020060">
+        <tr id="row-702020060" class="row-prod" data-ref="702020060" onclick="toggleDetail('702020060')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.99tzp3y1fe.webp" loading="lazy"></td>
           <td class="col-code">702020060</td>
           <td class="col-model"><span class="lnk" data-ref="702020060">WA861</span></td>
           <td class="col-name">WA861 LITE经典固定式3D四轮定位仪海外配置  WA861 LITE 3D wheel aligner</td>
           <td class="col-price">$2,050</td>
         </tr>
-        <tr id="det-702020060" class="row-detail">
+        <tr id="det-702020060" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -439,14 +437,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020061" class="row-prod" data-ref="702020061">
+        <tr id="row-702020061" class="row-prod" data-ref="702020061" onclick="toggleDetail('702020061')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.9ddlxza5h9.webp" loading="lazy"></td>
           <td class="col-code">702020061</td>
           <td class="col-model"><span class="lnk" data-ref="702020061">WA861</span></td>
           <td class="col-name">WA861 LITE经典固定式3D四轮定位仪海外配置（含打印机）  WA861 LITE 3D wheel aligner (including printer）</td>
           <td class="col-price">$2,210</td>
         </tr>
-        <tr id="det-702020061" class="row-detail">
+        <tr id="det-702020061" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -466,14 +464,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020062" class="row-prod" data-ref="702020062">
+        <tr id="row-702020062" class="row-prod" data-ref="702020062" onclick="toggleDetail('702020062')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.9ddlxza5h9.webp" loading="lazy"></td>
           <td class="col-code">702020062</td>
           <td class="col-model"><span class="lnk" data-ref="702020062">WA861</span></td>
           <td class="col-name">WA861 LITE经典固定式3D四轮定位仪海外配置（含双屏）  WA861 LITE 3D wheel aligner (including double screen）</td>
           <td class="col-price">$2,200</td>
         </tr>
-        <tr id="det-702020062" class="row-detail">
+        <tr id="det-702020062" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -493,14 +491,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702020063" class="row-prod" data-ref="702020063">
+        <tr id="row-702020063" class="row-prod" data-ref="702020063" onclick="toggleDetail('702020063')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.9ddlxza5h9.webp" loading="lazy"></td>
           <td class="col-code">702020063</td>
           <td class="col-model"><span class="lnk" data-ref="702020063">WA861</span></td>
           <td class="col-name">WA861 LITE经典固定式3D四轮定位仪海外配置（含打印机+双屏）  WA861 LITE 3D wheel aligner (including printer+double screen）</td>
           <td class="col-price">$2,360</td>
         </tr>
-        <tr id="det-702020063" class="row-detail">
+        <tr id="det-702020063" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -520,28 +518,28 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702990003" class="row-prod" data-ref="702990003">
+        <tr id="row-702990003" class="row-prod" data-ref="702990003" onclick="toggleDetail('702990003')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.2rvs4c85qt.webp" loading="lazy"></td>
           <td class="col-code">702990003</td>
           <td class="col-model"><span data-ref="702990003">WA861</span></td>
           <td class="col-name">WA861 L 选配打印机扩展包（含打印机+安装支架） WA861 L Optional Printer Extension Pack (Includes Printer & Mounting Bra...</td>
           <td class="col-price">$150</td>
         </tr>
-        <tr id="row-702990004" class="row-prod" data-ref="702990004">
+        <tr id="row-702990004" class="row-prod" data-ref="702990004" onclick="toggleDetail('702990004')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.64ehypp3zv.webp" loading="lazy"></td>
           <td class="col-code">702990004</td>
           <td class="col-model"><span data-ref="702990004">WA861</span></td>
           <td class="col-name">WA861 选配打印机 Optional Printer for WA861 L</td>
           <td class="col-price">$90</td>
         </tr>
-        <tr id="row-702050012" class="row-prod" data-ref="702050012">
+        <tr id="row-702050012" class="row-prod" data-ref="702050012" onclick="toggleDetail('702050012')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.9gx7t4bt5o.webp" loading="lazy"></td>
           <td class="col-code">702050012</td>
           <td class="col-model"><span class="lnk" data-ref="702050012">WAA613</span></td>
           <td class="col-name">WAA613海外标准配置(轮毂夹版) WAA613 Overseas Standard Configuration (Rim Clamp Version)</td>
           <td class="col-price">$9,000</td>
         </tr>
-        <tr id="det-702050012" class="row-detail">
+        <tr id="det-702050012" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -558,14 +556,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702050013" class="row-prod" data-ref="702050013">
+        <tr id="row-702050013" class="row-prod" data-ref="702050013" onclick="toggleDetail('702050013')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.9gx7t4bt5o.webp" loading="lazy"></td>
           <td class="col-code">702050013</td>
           <td class="col-model"><span class="lnk" data-ref="702050013">WAA613</span></td>
           <td class="col-name">WAA613海外标准配置(抱胎夹版) WAA613 Overseas Standard Configuration (Tire Clamp Version)</td>
           <td class="col-price">$9,100</td>
         </tr>
-        <tr id="det-702050013" class="row-detail">
+        <tr id="det-702050013" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -582,21 +580,21 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702050014" class="row-prod" data-ref="702050014">
+        <tr id="row-702050014" class="row-prod" data-ref="702050014" onclick="toggleDetail('702050014')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.2yz02dznsz.webp" loading="lazy"></td>
           <td class="col-code">702050014</td>
           <td class="col-model"><span data-ref="702050014">WAA613</span></td>
           <td class="col-name">WAA613选配ADAS PRO+ V2扩展包(搭配SLC) WAA613 Optional ADAS PRO+ V2 Expansion Kit (with SLC)</td>
           <td class="col-price">$4,800</td>
         </tr>
-        <tr id="row-702050004" class="row-prod" data-ref="702050004">
+        <tr id="row-702050004" class="row-prod" data-ref="702050004" onclick="toggleDetail('702050004')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5xba5w8qyz.webp" loading="lazy"></td>
           <td class="col-code">702050004</td>
           <td class="col-model"><span class="lnk" data-ref="702050004">WAA939</span></td>
           <td class="col-name">WAA939 汽车智能驾驶校准系统海外基础配置  WAA939 Vehicle Intelligent Driving Calibration System Overseas Basic Config...</td>
           <td class="col-price">$14,000</td>
         </tr>
-        <tr id="det-702050004" class="row-detail">
+        <tr id="det-702050004" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -613,14 +611,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702050005" class="row-prod" data-ref="702050005">
+        <tr id="row-702050005" class="row-prod" data-ref="702050005" onclick="toggleDetail('702050005')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5xba5w8qyz.webp" loading="lazy"></td>
           <td class="col-code">702050005</td>
           <td class="col-model"><span class="lnk" data-ref="702050005">WAA939</span></td>
           <td class="col-name">WAA939 汽车智能驾驶校准系统海外标准配置  WAA939 Vehicle Intelligent Driving Calibration System Overseas Standard Con...</td>
           <td class="col-price">$16,000</td>
         </tr>
-        <tr id="det-702050005" class="row-detail">
+        <tr id="det-702050005" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -637,14 +635,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702050006" class="row-prod" data-ref="702050006">
+        <tr id="row-702050006" class="row-prod" data-ref="702050006" onclick="toggleDetail('702050006')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5xba5w8qyz.webp" loading="lazy"></td>
           <td class="col-code">702050006</td>
           <td class="col-model"><span class="lnk" data-ref="702050006">WAA939</span></td>
           <td class="col-name">WAA939 汽车智能驾驶校准系统海外高级配置  WAA939 Vehicle Intelligent Driving Calibration System Overseas Advanced Con...</td>
           <td class="col-price">$18,000</td>
         </tr>
-        <tr id="det-702050006" class="row-detail">
+        <tr id="det-702050006" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -661,14 +659,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702050007" class="row-prod" data-ref="702050007">
+        <tr id="row-702050007" class="row-prod" data-ref="702050007" onclick="toggleDetail('702050007')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5xba5w8qyz.webp" loading="lazy"></td>
           <td class="col-code">702050007</td>
           <td class="col-model"><span class="lnk" data-ref="702050007">WAA939</span></td>
           <td class="col-name">WAA939 汽车智能驾驶校准系统海外豪华配置  WAA939 Vehicle Intelligent Driving Calibration System Overseas Deluxe Confi...</td>
           <td class="col-price">$21,000</td>
         </tr>
-        <tr id="det-702050007" class="row-detail">
+        <tr id="det-702050007" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -700,14 +698,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
       <thead><tr><th style="width:60px"></th><th style="width:80px">Код</th><th style="width:100px">Модель</th><th>Описание</th><th style="width:90px;text-align:right">Цена (USD)</th></tr></thead>
       <tbody>
         <tr class="ev-subhead"><td colspan="5" style="padding:6px 16px;border-top:2px solid #0F766E;border-bottom:1px solid #0F766E33;font-size:10px;font-weight:700;color:#0F766E;text-transform:uppercase;letter-spacing:1px;background:#ECFDF5;">EV ДИАГНОСТИКА <span style="font-weight:400;color:#6B7280;margin-left:8px;">— Первичная проверка батареи и электроники</span></td></tr>
-        <tr id="row-706030035" class="row-prod" data-ref="706030035">
+        <tr id="row-706030035" class="row-prod" data-ref="706030035" onclick="toggleDetail('706030035')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.2vfe4oeno6.webp" loading="lazy"></td>
           <td class="col-code">706030035</td>
           <td class="col-model"><span class="lnk" data-ref="706030035">DP901</span></td>
           <td class="col-name">DP901汽车维修专用智能数字电源海外配置 DP901 Intelligent Digital Power Supply for Automotive Repair Overseas Configur...</td>
           <td class="col-price">$1,250</td>
         </tr>
-        <tr id="det-706030035" class="row-detail">
+        <tr id="det-706030035" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -724,14 +722,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-706030041" data-ref="706030041">
+        <tr id="row-706030041" data-ref="706030041" onclick="toggleDetail('706030041')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.szle3qax0.webp" loading="lazy"></td>
           <td class="col-code">706030041</td>
           <td class="col-model"><span class="lnk" data-ref="706030041">P01</span></td>
           <td class="col-name">P01新能源汽车电池包检测仪海外配置_V3.0 P01 New Energy Vehicle Battery Pack Diagnostic Tool Overseas Configuration_V...</td>
           <td class="col-price">$1,100</td>
         </tr>
-<tr id="det-706030041" class="row-detail">
+<tr id="det-706030041" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -748,14 +746,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-706030047" data-ref="706030047">
+        <tr id="row-706030047" data-ref="706030047" onclick="toggleDetail('706030047')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.4joqzcfyv6.webp" loading="lazy"></td>
           <td class="col-code">706030047</td>
           <td class="col-model"><span class="lnk" data-ref="706030047">P03</span></td>
           <td class="col-name">P03新能源汽车综合检测仪海外配置_V3.0 P03 New Energy Vehicle Comprehensive Diagnostic Tool Overseas Configuration_V...</td>
           <td class="col-price">$1,600</td>
         </tr>
-<tr id="det-706030047" class="row-detail">
+<tr id="det-706030047" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -772,14 +770,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-706030066" data-ref="706030066">
+        <tr id="row-706030066" data-ref="706030066" onclick="toggleDetail('706030066')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.96ae01fe67.webp" loading="lazy"></td>
           <td class="col-code">706030066</td>
           <td class="col-model"><span class="lnk" data-ref="706030066">P13</span></td>
           <td class="col-name">P13新能源汽车检测仪海外配置(欧规) P13 New Energy Vehicle Diagnostic Tool Overseas Configuration (EU Specification)</td>
           <td class="col-price">$1,930</td>
         </tr>
-<tr id="det-706030066" class="row-detail">
+<tr id="det-706030066" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -796,14 +794,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-706030086" data-ref="706030086">
+        <tr id="row-706030086" data-ref="706030086" onclick="toggleDetail('706030086')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.64ehytcs2u.webp" loading="lazy"></td>
           <td class="col-code">706030086</td>
           <td class="col-model"><span class="lnk" data-ref="706030086">P01+SLC</span></td>
           <td class="col-name">P01新能源汽车检测仪海外配置 (搭配SLC) P01 New Energy Vehicle Diagnostic Tool Overseas Configuration (with SLC)</td>
           <td class="col-price">$1,300</td>
         </tr>
-<tr id="det-706030086" class="row-detail">
+<tr id="det-706030086" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -820,14 +818,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-706030092" data-ref="706030092">
+        <tr id="row-706030092" data-ref="706030092" onclick="toggleDetail('706030092')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5q827y55we.webp" loading="lazy"></td>
           <td class="col-code">706030092</td>
           <td class="col-model"><span class="lnk" data-ref="706030092">P03+SLC</span></td>
           <td class="col-name">P03新能源汽车综合检测仪海外配置 V4.0(搭配SLC) P03 New Energy Vehicle Comprehensive Diagnostic Tool Overseas Configur...</td>
           <td class="col-price">$1,800</td>
         </tr>
-<tr id="det-706030092" class="row-detail">
+<tr id="det-706030092" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -844,14 +842,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-706030096" data-ref="706030096">
+        <tr id="row-706030096" data-ref="706030096" onclick="toggleDetail('706030096')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.7ehf6fzlyr.webp" loading="lazy"></td>
           <td class="col-code">706030096</td>
           <td class="col-model"><span class="lnk" data-ref="706030096">E10</span></td>
           <td class="col-name">E10新能源汽车检测仪海外标准配置 E10 New Energy Vehicle Diagnostic Tool Overseas Standard Configuration</td>
           <td class="col-price">$680</td>
         </tr>
-<tr id="det-706030096" class="row-detail">
+<tr id="det-706030096" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -869,14 +867,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
           </td>
         </tr>
         <tr class="ev-subhead"><td colspan="5" style="padding:6px 16px;border-top:2px solid #0F766E;border-bottom:1px solid #0F766E33;font-size:10px;font-weight:700;color:#0F766E;text-transform:uppercase;letter-spacing:1px;background:#ECFDF5;">БАЛАНСИРОВКА ЯЧЕЕК <span style="font-weight:400;color:#6B7280;margin-left:8px;">— Выравнивание / восстановление ёмкости</span></td></tr>
-        <tr id="row-708010053" class="row-prod" style="background:#ECFDF5;border-left:3px solid #0F766E;" data-ref="708010053">
+        <tr id="row-708010053" class="row-prod" style="background:#ECFDF5;border-left:3px solid #0F766E;" data-ref="708010053" onclick="toggleDetail('708010053')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1apn57e3su.webp" loading="lazy"></td>
           <td class="col-code">708010053</td>
           <td class="col-model">⚡ <span class="lnk" data-ref="708010053">CE39</span></td>
           <td class="col-name">CE39诊断均衡充放电一体机_海外配置(带E10平板) CE39 Diagnostic Balancing Charge-Discharge All-in-One Machine_Overseas C...</td>
           <td class="col-price">$2,100</td>
         </tr>
-        <tr id="det-708010053" class="row-detail">
+        <tr id="det-708010053" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -893,14 +891,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010056" class="row-prod" style="background:#ECFDF5;border-left:3px solid #0F766E;" data-ref="708010056">
+        <tr id="row-708010056" class="row-prod" style="background:#ECFDF5;border-left:3px solid #0F766E;" data-ref="708010056" onclick="toggleDetail('708010056')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.51esqg2id1.webp" loading="lazy"></td>
           <td class="col-code">708010056</td>
           <td class="col-model">⚡ <span class="lnk" data-ref="708010056">CE39</span></td>
           <td class="col-name">CE39诊断均衡充放电一体机(不带平板)海外配置 CE39 Diagnostic Balancing Charge-Discharge All-in-One Machine (Without Tabl...</td>
           <td class="col-price">$1,200</td>
         </tr>
-        <tr id="det-708010056" class="row-detail">
+        <tr id="det-708010056" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -917,14 +915,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010041" class="row-prod" data-ref="708010041">
+        <tr id="row-708010041" class="row-prod" data-ref="708010041" onclick="toggleDetail('708010041')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.6bhpx2idy6.webp" loading="lazy"></td>
           <td class="col-code">708010041</td>
           <td class="col-model"><span class="lnk" data-ref="708010041">EB480</span></td>
           <td class="col-name">EB480电池包电芯均衡仪海外配置(48通道)_V2.0 EB480 Battery Pack Cell Balancer Overseas Configuration (48 Channels)_V...</td>
           <td class="col-price">$3,300</td>
         </tr>
-        <tr id="det-708010041" class="row-detail">
+        <tr id="det-708010041" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -945,14 +943,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010045" class="row-prod" data-ref="708010045">
+        <tr id="row-708010045" class="row-prod" data-ref="708010045" onclick="toggleDetail('708010045')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.232imxsbr8.webp" loading="lazy"></td>
           <td class="col-code">708010045</td>
           <td class="col-model"><span class="lnk" data-ref="708010045">EB240</span></td>
           <td class="col-name">EB240 电池包电芯均衡仪海外配置_V2.0 EB240 Battery Pack Cell Balancer Overseas Configuration_V2.0</td>
           <td class="col-price">$2,300</td>
         </tr>
-        <tr id="det-708010045" class="row-detail">
+        <tr id="det-708010045" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -969,14 +967,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010054" class="row-prod" data-ref="708010054">
+        <tr id="row-708010054" class="row-prod" data-ref="708010054" onclick="toggleDetail('708010054')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.6f1buhc5nh.webp" loading="lazy"></td>
           <td class="col-code">708010054</td>
           <td class="col-model"><span class="lnk" data-ref="708010054">ECB240</span></td>
           <td class="col-name">ECB240充放均衡一体机_海外配置 ECB240 Charge-Discharge Balancer All-in-One Machine_Overseas Configuration</td>
           <td class="col-price">$1,800</td>
         </tr>
-        <tr id="det-708010054" class="row-detail">
+        <tr id="det-708010054" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -993,14 +991,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010076" class="row-prod" data-ref="708010076">
+        <tr id="row-708010076" class="row-prod" data-ref="708010076" onclick="toggleDetail('708010076')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.6ikxponp2o.webp" loading="lazy"></td>
           <td class="col-code">708010076</td>
           <td class="col-model"><span class="lnk" data-ref="708010076">EP101</span></td>
           <td class="col-name">EP101便携式单电芯充放电机_海外配置（AC220V） EP101 Portable Single Cell Charge-Discharge Machine_Overseas Configurat...</td>
           <td class="col-price">$400</td>
         </tr>
-        <tr id="det-708010076" class="row-detail">
+        <tr id="det-708010076" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1018,14 +1016,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
           </td>
         </tr>
         <tr class="ev-subhead"><td colspan="5" style="padding:6px 16px;border-top:2px solid #0F766E;border-bottom:1px solid #0F766E33;font-size:10px;font-weight:700;color:#0F766E;text-transform:uppercase;letter-spacing:1px;background:#ECFDF5;">ЗАРЯД-РАЗРЯД <span style="font-weight:400;color:#6B7280;margin-left:8px;">— Зарядка, разрядка, тестирование под нагрузкой</span></td></tr>
-        <tr id="row-708010016" class="row-prod" data-ref="708010016">
+        <tr id="row-708010016" class="row-prod" data-ref="708010016" onclick="toggleDetail('708010016')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.et5pr7ikf.webp" loading="lazy"></td>
           <td class="col-code">708010016</td>
           <td class="col-model"><span class="lnk" data-ref="708010016">DP750</span></td>
           <td class="col-name">DP750汽车维修专用智能数字电源海外配置 DP750 Intelligent Digital Power Supply for Automotive Repair Overseas Configur...</td>
           <td class="col-price">$700</td>
         </tr>
-        <tr id="det-708010016" class="row-detail">
+        <tr id="det-708010016" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1042,14 +1040,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010043" class="row-prod" data-ref="708010043">
+        <tr id="row-708010043" class="row-prod" data-ref="708010043" onclick="toggleDetail('708010043')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.102tccxku6.webp" loading="lazy"></td>
           <td class="col-code">708010043</td>
           <td class="col-model"><span class="lnk" data-ref="708010043">EP401</span></td>
           <td class="col-name">EP401电池包模组充放电一体机海外配置_V2.0 EP401 Battery Pack Module Charge-Discharge All-in-One Machine Overseas Con...</td>
           <td class="col-price">$2,800</td>
         </tr>
-        <tr id="det-708010043" class="row-detail">
+        <tr id="det-708010043" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1070,14 +1068,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010062" class="row-prod" data-ref="708010062">
+        <tr id="row-708010062" class="row-prod" data-ref="708010062" onclick="toggleDetail('708010062')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/EP865_ev_battery_charge_discharge.webp" loading="lazy"></td>
           <td class="col-code">708010062</td>
           <td class="col-model"><span class="lnk" data-ref="708010062">EP865</span></td>
           <td class="col-name">EP865整包充放电一体机海外配置 EP865 Whole Pack Charge-Discharge All-in-One Machine Overseas Configuration</td>
           <td class="col-price">$8,200</td>
         </tr>
-        <tr id="det-708010062" class="row-detail">
+        <tr id="det-708010062" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1098,14 +1096,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010066" class="row-prod" data-ref="708010066">
+        <tr id="row-708010066" class="row-prod" data-ref="708010066" onclick="toggleDetail('708010066')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/EP401_ev_battery_charge_discharge_equipment.webp" loading="lazy"></td>
           <td class="col-code">708010066</td>
           <td class="col-model"><span class="lnk" data-ref="708010066">EP401</span></td>
           <td class="col-name">EP401整包充放电一体机海外配置_V3.0 EP401 Whole Pack Charge-Discharge All-in-One Machine Overseas Configuration_V...</td>
           <td class="col-price">$3,000</td>
         </tr>
-        <tr id="det-708010066" class="row-detail">
+        <tr id="det-708010066" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1126,21 +1124,21 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010068" class="row-prod" data-ref="708010068">
+        <tr id="row-708010068" class="row-prod" data-ref="708010068" onclick="toggleDetail('708010068')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1vzart8g71.webp" loading="lazy"></td>
           <td class="col-code">708010068</td>
           <td class="col-model"><span data-ref="708010068">EP401</span></td>
           <td class="col-name">EP401整包功能扩展包海外配置 EP401 Whole Pack Function Expansion Kit Overseas Configuration</td>
           <td class="col-price">$380</td>
         </tr>
-        <tr id="row-708010079" class="row-prod" data-ref="708010079">
+        <tr id="row-708010079" class="row-prod" data-ref="708010079" onclick="toggleDetail('708010079')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3rbvk4olne.webp" loading="lazy"></td>
           <td class="col-code">708010079</td>
           <td class="col-model"><span class="lnk" data-ref="708010079">DP903</span></td>
           <td class="col-name">DP903智能数字电源&多功能移动充电一体机海外配置 DP903 Intelligent Digital Power Supply & Multifunctional Mobile Charger A...</td>
           <td class="col-price">$1,900</td>
         </tr>
-        <tr id="det-708010079" class="row-detail">
+        <tr id="det-708010079" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1157,14 +1155,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010083" class="row-prod" data-ref="708010083">
+        <tr id="row-708010083" class="row-prod" data-ref="708010083" onclick="toggleDetail('708010083')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.2rvs6ym83e.webp" loading="lazy"></td>
           <td class="col-code">708010083</td>
           <td class="col-model"><span class="lnk" data-ref="708010083">DP903</span></td>
           <td class="col-name">DP903智能数字电源&多功能移动充电一体机海外配置(带快充枪和转接头) DP903 Intelligent Digital Power Supply & Multifunctional Mobile...</td>
           <td class="col-price">$3,200</td>
         </tr>
-        <tr id="det-708010083" class="row-detail">
+        <tr id="det-708010083" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1182,14 +1180,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
           </td>
         </tr>
         <tr class="ev-subhead"><td colspan="5" style="padding:6px 16px;border-top:2px solid #0F766E;border-bottom:1px solid #0F766E33;font-size:10px;font-weight:700;color:#0F766E;text-transform:uppercase;letter-spacing:1px;background:#ECFDF5;">ПРОВЕРКА ГЕРМЕТИЧНОСТИ <span style="font-weight:400;color:#6B7280;margin-left:8px;">— Контроль герметичности батарейного блока</span></td></tr>
-        <tr id="row-708010039" class="row-prod" data-ref="708010039">
+        <tr id="row-708010039" class="row-prod" data-ref="708010039" onclick="toggleDetail('708010039')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.8l0qg984j0.webp" loading="lazy"></td>
           <td class="col-code">708010039</td>
           <td class="col-model"><span class="lnk" data-ref="708010039">ET30</span></td>
           <td class="col-name">ET30电池包气密性检测仪海外配置(低压)_V2.0 ET30 Battery Pack Air Leak Tester Overseas Configuration (Low Pressure)_V...</td>
           <td class="col-price">$630</td>
         </tr>
-        <tr id="det-708010039" class="row-detail">
+        <tr id="det-708010039" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1206,14 +1204,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010064" class="row-prod" data-ref="708010064">
+        <tr id="row-708010064" class="row-prod" data-ref="708010064" onclick="toggleDetail('708010064')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.6po5nmvz68.webp" loading="lazy"></td>
           <td class="col-code">708010064</td>
           <td class="col-model"><span class="lnk" data-ref="708010064">ET500</span></td>
           <td class="col-name">ET500电池包气密性检测仪海外配置_V2.0 ET500 Battery Pack Air Leak Tester Overseas Configuration_V2.0</td>
           <td class="col-price">$1,430</td>
         </tr>
-        <tr id="det-708010064" class="row-detail">
+        <tr id="det-708010064" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1231,14 +1229,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
           </td>
         </tr>
         <tr class="ev-subhead"><td colspan="5" style="padding:6px 16px;border-top:2px solid #0F766E;border-bottom:1px solid #0F766E33;font-size:10px;font-weight:700;color:#0F766E;text-transform:uppercase;letter-spacing:1px;background:#ECFDF5;">ТЕСТ КОМПРЕССОРА <span style="font-weight:400;color:#6B7280;margin-left:8px;">— Диагностика электрических компрессоров</span></td></tr>
-        <tr id="row-708010086" class="row-prod" data-ref="708010086">
+        <tr id="row-708010086" class="row-prod" data-ref="708010086" onclick="toggleDetail('708010086')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1ow2w2n8ih.webp" loading="lazy"></td>
           <td class="col-code">708010086</td>
           <td class="col-model"><span class="lnk" data-ref="708010086">ECP739</span></td>
           <td class="col-name">ECP739电动压缩机综合检测仪海外配置 ECP739 Electric Compressor Comprehensive Tester Overseas Configuration</td>
           <td class="col-price">$1,280</td>
         </tr>
-        <tr id="det-708010086" class="row-detail">
+        <tr id="det-708010086" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1255,14 +1253,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-708010088" class="row-prod" data-ref="708010088">
+        <tr id="row-708010088" class="row-prod" data-ref="708010088" onclick="toggleDetail('708010088')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.9kgttfaf7j.webp" loading="lazy"></td>
           <td class="col-code">708010088</td>
           <td class="col-model"><span class="lnk" data-ref="708010088">ECP739</span></td>
           <td class="col-name">ECP739电动压缩机综合检测仪海外配置(带E10平板) ECP739 Electric Compressor Comprehensive Tester Overseas Configuration ...</td>
           <td class="col-price">$1,780</td>
         </tr>
-        <tr id="det-708010088" class="row-detail">
+        <tr id="det-708010088" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1280,14 +1278,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
           </td>
         </tr>
         <tr class="ev-subhead"><td colspan="5" style="padding:6px 16px;border-top:2px solid #0F766E;border-bottom:1px solid #0F766E33;font-size:10px;font-weight:700;color:#0F766E;text-transform:uppercase;letter-spacing:1px;background:#ECFDF5;">ИНСТРУМЕНТЫ <span style="font-weight:400;color:#6B7280;margin-left:8px;">— Тестеры изоляции, мультиметры, токовые клещи</span></td></tr>
-        <tr id="row-706030052" data-ref="706030052">
+        <tr id="row-706030052" data-ref="706030052" onclick="toggleDetail('706030052')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.39ltubts84.webp" loading="lazy"></td>
           <td class="col-code">706030052</td>
           <td class="col-model"><span class="lnk" data-ref="706030052">OM201</span></td>
           <td class="col-name">OM201示波万用表海外配置 OM201 Oscilloscope Multimeter Overseas Configuration</td>
           <td class="col-price">$160</td>
         </tr>
-<tr id="det-706030052" class="row-detail">
+<tr id="det-706030052" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1303,14 +1301,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-706030054" data-ref="706030054">
+        <tr id="row-706030054" data-ref="706030054" onclick="toggleDetail('706030054')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.60uw2efm54.webp" loading="lazy"></td>
           <td class="col-code">706030054</td>
           <td class="col-model"><span class="lnk" data-ref="706030054">IRT01</span></td>
           <td class="col-name">IRT01绝缘测试仪海外配置 IRT01 Insulation Tester Overseas Configuration</td>
           <td class="col-price">$260</td>
         </tr>
-<tr id="det-706030054" class="row-detail">
+<tr id="det-706030054" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1327,14 +1325,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-706030102" data-ref="706030102">
+        <tr id="row-706030102" data-ref="706030102" onclick="toggleDetail('706030102')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.8hh4hbn0jd.webp" loading="lazy"></td>
           <td class="col-code">706030102</td>
           <td class="col-model"><span class="lnk" data-ref="706030102">ECC03</span></td>
           <td class="col-name">ECC03电流钳海外配置 ECC03 Current Clamp Overseas Configuration</td>
           <td class="col-price">$100</td>
         </tr>
-<tr id="det-706030102" class="row-detail">
+<tr id="det-706030102" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1352,14 +1350,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
           </td>
         </tr>
         <tr class="ev-subhead"><td colspan="5" style="padding:6px 16px;border-top:2px solid #0F766E;border-bottom:1px solid #0F766E33;font-size:10px;font-weight:700;color:#0F766E;text-transform:uppercase;letter-spacing:1px;background:#ECFDF5;">БЕЗОПАСНОСТЬ <span style="font-weight:400;color:#6B7280;margin-left:8px;">— Защита при работе с высоким напряжением</span></td></tr>
-        <tr id="row-704020010" data-ref="704020010">
+        <tr id="row-704020010" data-ref="704020010" onclick="toggleDetail('704020010')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.26m4jfyh0q.webp" loading="lazy"></td>
           <td class="col-code">704020010</td>
           <td class="col-model">704020010</td>
           <td class="col-name">绝缘垫 Insulation Mat</td>
           <td class="col-price">$70</td>
         </tr>
-<tr id="det-704020010" class="row-detail">
+<tr id="det-704020010" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1374,14 +1372,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704020011" data-ref="704020011">
+        <tr id="row-704020011" data-ref="704020011" onclick="toggleDetail('704020011')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.7ehf6frpbt.webp" loading="lazy"></td>
           <td class="col-code">704020011</td>
           <td class="col-model">704020011</td>
           <td class="col-name">护目镜 Safety Goggles</td>
           <td class="col-price">$3</td>
         </tr>
-<tr id="det-704020011" class="row-detail">
+<tr id="det-704020011" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1396,14 +1394,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704020012" data-ref="704020012">
+        <tr id="row-704020012" data-ref="704020012" onclick="toggleDetail('704020012')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.7ehf6frx7k.webp" loading="lazy"></td>
           <td class="col-code">704020012</td>
           <td class="col-model">704020012</td>
           <td class="col-name">绝缘防护套件 Insulation Protection Kit</td>
           <td class="col-price">$120</td>
         </tr>
-<tr id="det-704020012" class="row-detail">
+<tr id="det-704020012" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1418,14 +1416,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704020013" data-ref="704020013">
+        <tr id="row-704020013" data-ref="704020013" onclick="toggleDetail('704020013')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.51esp8eb9l.webp" loading="lazy"></td>
           <td class="col-code">704020013</td>
           <td class="col-model">704020013</td>
           <td class="col-name">绝缘救生钩 Insulation Rescue Hook</td>
           <td class="col-price">$25</td>
         </tr>
-<tr id="det-704020013" class="row-detail">
+<tr id="det-704020013" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1454,14 +1452,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
     <table>
       <thead><tr><th style="width:60px"></th><th style="width:80px">Код</th><th style="width:100px">Модель</th><th>Описание</th><th style="width:90px;text-align:right">Цена (USD)</th></tr></thead>
       <tbody>
-        <tr id="row-701040054" data-ref="701040054">
+        <tr id="row-701040054" data-ref="701040054" onclick="toggleDetail('701040054')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.51esc8fxrj.webp" loading="lazy"></td>
           <td class="col-code">701040054</td>
           <td class="col-model">701040054</td>
           <td class="col-name">ADAS PRO+ V2海外标准配置（不配ACC）ADAS PRO+ V2 Overseas Standard Configuration (without ACC)</td>
           <td class="col-price">$4,200</td>
         </tr>
-<tr id="det-701040054" class="row-detail">
+<tr id="det-701040054" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1476,14 +1474,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701040058" data-ref="701040058">
+        <tr id="row-701040058" data-ref="701040058" onclick="toggleDetail('701040058')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.51esc8fxrj.webp" loading="lazy"></td>
           <td class="col-code">701040058</td>
           <td class="col-model">701040058</td>
           <td class="col-name">ADAS PRO+ V2 海外标准配置 (配ACC)  ADAS PRO+ V2 Overseas Standard Configuration (with ACC)</td>
           <td class="col-price">$4,800</td>
         </tr>
-<tr id="det-701040058" class="row-detail">
+<tr id="det-701040058" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1498,14 +1496,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701040002" data-ref="701040002">
+        <tr id="row-701040002" data-ref="701040002" onclick="toggleDetail('701040002')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.8okcea2r28.webp" loading="lazy"></td>
           <td class="col-code">701040002</td>
           <td class="col-model">701040002</td>
           <td class="col-name">ADAS PRO+海外基础配置 ADAS PRO+ Overseas Basic Configuration</td>
           <td class="col-price">$2,800</td>
         </tr>
-<tr id="det-701040002" class="row-detail">
+<tr id="det-701040002" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1520,14 +1518,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701040003" data-ref="701040003">
+        <tr id="row-701040003" data-ref="701040003" onclick="toggleDetail('701040003')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.8okcea2r28.webp" loading="lazy"></td>
           <td class="col-code">701040003</td>
           <td class="col-model">701040003</td>
           <td class="col-name">ADAS PRO+海外标准配置 ADAS PRO+ Overseas Standard Configuration</td>
           <td class="col-price">$4,200</td>
         </tr>
-<tr id="det-701040003" class="row-detail">
+<tr id="det-701040003" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1542,14 +1540,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701040004" data-ref="701040004">
+        <tr id="row-701040004" data-ref="701040004" onclick="toggleDetail('701040004')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.8okcea2r28.webp" loading="lazy"></td>
           <td class="col-code">701040004</td>
           <td class="col-model">701040004</td>
           <td class="col-name">ADAS PRO+海外高级配置 ADAS PRO+ Overseas Advanced Configuration</td>
           <td class="col-price">$5,800</td>
         </tr>
-<tr id="det-701040004" class="row-detail">
+<tr id="det-701040004" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1564,14 +1562,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701040005" data-ref="701040005">
+        <tr id="row-701040005" data-ref="701040005" onclick="toggleDetail('701040005')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.8okcea2r28.webp" loading="lazy"></td>
           <td class="col-code">701040005</td>
           <td class="col-model">701040005</td>
           <td class="col-name">ADAS PRO+海外豪华配置 ADAS PRO+ Overseas Deluxe Configuration</td>
           <td class="col-price">$7,800</td>
         </tr>
-<tr id="det-701040005" class="row-detail">
+<tr id="det-701040005" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1586,14 +1584,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701020123" data-ref="701020123">
+        <tr id="row-701020123" data-ref="701020123" onclick="toggleDetail('701020123')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.32im0f3ipo.webp" loading="lazy"></td>
           <td class="col-code">701020123</td>
           <td class="col-model">701020123</td>
           <td class="col-name">ADAS Mobile海外基础配置 ADAS Mobile Overseas Basic Configuration</td>
           <td class="col-price">$1,680</td>
         </tr>
-<tr id="det-701020123" class="row-detail">
+<tr id="det-701020123" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1608,14 +1606,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701020120" data-ref="701020120">
+        <tr id="row-701020120" data-ref="701020120" onclick="toggleDetail('701020120')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.32im0f3ipo.webp" loading="lazy"></td>
           <td class="col-code">701020120</td>
           <td class="col-model">701020120</td>
           <td class="col-name">ADAS Mobile海外标准配置 ADAS Mobile Overseas Standard Configuration</td>
           <td class="col-price">$2,580</td>
         </tr>
-<tr id="det-701020120" class="row-detail">
+<tr id="det-701020120" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1630,14 +1628,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701020124" data-ref="701020124">
+        <tr id="row-701020124" data-ref="701020124" onclick="toggleDetail('701020124')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.32im0f3ipo.webp" loading="lazy"></td>
           <td class="col-code">701020124</td>
           <td class="col-model">701020124</td>
           <td class="col-name">ADAS Mobile海外高级配置 ADAS Mobile Overseas Advanced Configuration</td>
           <td class="col-price">$3,400</td>
         </tr>
-<tr id="det-701020124" class="row-detail">
+<tr id="det-701020124" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1652,14 +1650,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701060001" class="row-prod" data-ref="701060001">
+        <tr id="row-701060001" class="row-prod" data-ref="701060001" onclick="toggleDetail('701060001')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1e990c5rhc.webp" loading="lazy"></td>
           <td class="col-code">701060001</td>
           <td class="col-model"><span class="lnk" data-ref="701060001">701060001</span></td>
           <td class="col-name">ADAS LITE海外基础配置 ADAS LITE Overseas Basic Configuration</td>
           <td class="col-price">$1,200</td>
         </tr>
-        <tr id="det-701060001" class="row-detail">
+        <tr id="det-701060001" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1676,14 +1674,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701060004" class="row-prod" data-ref="701060004">
+        <tr id="row-701060004" class="row-prod" data-ref="701060004" onclick="toggleDetail('701060004')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1e990c5rhc.webp" loading="lazy"></td>
           <td class="col-code">701060004</td>
           <td class="col-model"><span class="lnk" data-ref="701060004">701060004</span></td>
           <td class="col-name">ADAS LITE海外标准配置 ADAS LITE Overseas Standard Configuration</td>
           <td class="col-price">$2,000</td>
         </tr>
-        <tr id="det-701060004" class="row-detail">
+        <tr id="det-701060004" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1700,14 +1698,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701080003" class="row-prod" data-ref="701080003">
+        <tr id="row-701080003" class="row-prod" data-ref="701080003" onclick="toggleDetail('701080003')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1e990c6ndx.webp" loading="lazy"></td>
           <td class="col-code">701080003</td>
           <td class="col-model"><span class="lnk" data-ref="701080003">701080003</span></td>
           <td class="col-name">ADAS ECO海外标准配置 ADAS ECO Overseas Standard Configuration</td>
           <td class="col-price">$1,700</td>
         </tr>
-        <tr id="det-701080003" class="row-detail">
+        <tr id="det-701080003" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1724,14 +1722,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701070002" data-ref="701070002">
+        <tr id="row-701070002" data-ref="701070002" onclick="toggleDetail('701070002')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.7lkn0i2y0a.webp" loading="lazy"></td>
           <td class="col-code">701070002</td>
           <td class="col-model">701070002</td>
           <td class="col-name">ADAS 雷达三合一海外标准配置 ADAS Radar Triple Combo Overseas Standard Configuration</td>
           <td class="col-price">$1,200</td>
         </tr>
-<tr id="det-701070002" class="row-detail">
+<tr id="det-701070002" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1746,14 +1744,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701040024" data-ref="701040024">
+        <tr id="row-701040024" data-ref="701040024" onclick="toggleDetail('701040024')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1ziwmn2aar.webp" loading="lazy"></td>
           <td class="col-code">701040024</td>
           <td class="col-model">701040024</td>
           <td class="col-name">ADAS PRO+ ACC雷达标靶配置 ADAS PRO+ ACC Radar Target Configuration</td>
           <td class="col-price">$700</td>
         </tr>
-<tr id="det-701040024" class="row-detail">
+<tr id="det-701040024" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1768,14 +1766,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701040026" data-ref="701040026">
+        <tr id="row-701040026" data-ref="701040026" onclick="toggleDetail('701040026')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1e990c87ty.webp" loading="lazy"></td>
           <td class="col-code">701040026</td>
           <td class="col-model">701040026</td>
           <td class="col-name">ADAS 后视及环视标靶包配置（欧洲）_V2.0 ADAS Rear View and Surround View Target Kit Configuration (Europe)_V2.0</td>
           <td class="col-price">$1,000</td>
         </tr>
-<tr id="det-701040026" class="row-detail">
+<tr id="det-701040026" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1790,14 +1788,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701010077" data-ref="701010077">
+        <tr id="row-701010077" data-ref="701010077" onclick="toggleDetail('701010077')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.2rvs4dji83.webp" loading="lazy"></td>
           <td class="col-code">701010077</td>
           <td class="col-model"><span class="lnk" data-ref="701010077">LAC05</span></td>
           <td class="col-name">ADAS 多普勒模拟器配置（LAC05-04） ADAS Doppler Simulator Configuration (LAC05-04)</td>
           <td class="col-price">$400</td>
         </tr>
-<tr id="det-701010077" class="row-detail">
+<tr id="det-701010077" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1812,14 +1810,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701010114" data-ref="701010114">
+        <tr id="row-701010114" data-ref="701010114" onclick="toggleDetail('701010114')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.2oc66nqrgy.webp" loading="lazy"></td>
           <td class="col-code">701010114</td>
           <td class="col-model"><span class="lnk" data-ref="701010114">LAC05</span></td>
           <td class="col-name">ADAS 大众激光雷达标靶配置（LAC05-06） ADAS Volkswagen LiDAR Target Configuration (LAC05-06)</td>
           <td class="col-price">$400</td>
         </tr>
-<tr id="det-701010114" class="row-detail">
+<tr id="det-701010114" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1834,14 +1832,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-701010080" data-ref="701010080">
+        <tr id="row-701010080" data-ref="701010080" onclick="toggleDetail('701010080')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.45ib8ev48y.webp" loading="lazy"></td>
           <td class="col-code">701010080</td>
           <td class="col-model"><span class="lnk" data-ref="701010080">LAC04</span></td>
           <td class="col-name">ADAS 大众/奥迪环视标靶（LAC04-14） ADAS Volkswagen/Audi Surround View Target (LAC04-14)</td>
           <td class="col-price">$260</td>
         </tr>
-<tr id="det-701010080" class="row-detail">
+<tr id="det-701010080" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1870,14 +1868,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
     <table>
       <thead><tr><th style="width:60px"></th><th style="width:80px">Код</th><th style="width:100px">Модель</th><th>Описание</th><th style="width:90px;text-align:right">Цена (USD)</th></tr></thead>
       <tbody>
-        <tr id="row-704020262" class="row-prod" data-ref="704020262">
+        <tr id="row-704020262" class="row-prod" data-ref="704020262" onclick="toggleDetail('704020262')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1ow2w34wfr.webp" loading="lazy"></td>
           <td class="col-code">704020262</td>
           <td class="col-model"><span class="lnk" data-ref="704020262">LT150</span></td>
           <td class="col-name">LT150新能源汽车电池拆装举升机(插电式)海外配置  LT150 EV Battery Lift (Pneumatic/Electric)</td>
           <td class="col-price">$1,000</td>
         </tr>
-        <tr id="det-704020262" class="row-detail">
+        <tr id="det-704020262" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1897,14 +1895,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704020127" class="row-prod" data-ref="704020127">
+        <tr id="row-704020127" class="row-prod" data-ref="704020127" onclick="toggleDetail('704020127')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1ow2w34wfr.webp" loading="lazy"></td>
           <td class="col-code">704020127</td>
           <td class="col-model"><span class="lnk" data-ref="704020127">LT150</span></td>
           <td class="col-name">LT150新能源电池包拆装举升机海外配置 (电动,220V/50Hz)  LT150 New Energy Battery Pack Dismounting Lift, Overseas Config...</td>
           <td class="col-price">$1,100</td>
         </tr>
-        <tr id="det-704020127" class="row-detail">
+        <tr id="det-704020127" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1924,14 +1922,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030274" class="row-prod" data-ref="704030274">
+        <tr id="row-704030274" class="row-prod" data-ref="704030274" onclick="toggleDetail('704030274')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1ow2w34wfr.webp" loading="lazy"></td>
           <td class="col-code">704030274</td>
           <td class="col-model"><span class="lnk" data-ref="704030274">LT150</span></td>
           <td class="col-name">LT150新能源电池包拆装举升机海外配置(电动,220V,60HZ)  LT150 New Energy Battery Pack Dismounting Lift, Overseas Configu...</td>
           <td class="col-price">$1,100</td>
         </tr>
-        <tr id="det-704030274" class="row-detail">
+        <tr id="det-704030274" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1951,14 +1949,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704020263" class="row-prod" data-ref="704020263">
+        <tr id="row-704020263" class="row-prod" data-ref="704020263" onclick="toggleDetail('704020263')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.6m4jpxk15k.webp" loading="lazy"></td>
           <td class="col-code">704020263</td>
           <td class="col-model"><span class="lnk" data-ref="704020263">LT150R</span></td>
           <td class="col-name">LT150R新能源电池拆装举升机海外配置(插电式,220V,50HZ)  LT150R New Energy Battery Dismounting Lift, Overseas Configurat...</td>
           <td class="col-price">$1,500</td>
         </tr>
-        <tr id="det-704020263" class="row-detail">
+        <tr id="det-704020263" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -1978,14 +1976,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030276" class="row-prod" data-ref="704030276">
+        <tr id="row-704030276" class="row-prod" data-ref="704030276" onclick="toggleDetail('704030276')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.6m4jpxk15k.webp" loading="lazy"></td>
           <td class="col-code">704030276</td>
           <td class="col-model"><span class="lnk" data-ref="704030276">LT150R</span></td>
           <td class="col-name">LT150R新能源电池拆装举升机海外配置(插电式,220V,60HZ)  LT150R New Energy Battery Dismounting Lift, Overseas Configurat...</td>
           <td class="col-price">$1,500</td>
         </tr>
-        <tr id="det-704030276" class="row-detail">
+        <tr id="det-704030276" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2005,14 +2003,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704020264" class="row-prod" data-ref="704020264">
+        <tr id="row-704020264" class="row-prod" data-ref="704020264" onclick="toggleDetail('704020264')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.6m4jpxk15k.webp" loading="lazy"></td>
           <td class="col-code">704020264</td>
           <td class="col-model"><span class="lnk" data-ref="704020264">LT150R</span></td>
           <td class="col-name">LT150R新能源汽车电池拆装举升机海外配置(充电式)  LT150R New Energy Vehicle Battery Dismounting Lift, Overseas Configurat...</td>
           <td class="col-price">$1,750</td>
         </tr>
-        <tr id="det-704020264" class="row-detail">
+        <tr id="det-704020264" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2032,14 +2030,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030097" class="row-prod" data-ref="704030097">
+        <tr id="row-704030097" class="row-prod" data-ref="704030097" onclick="toggleDetail('704030097')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5tro87494d.webp" loading="lazy"></td>
           <td class="col-code">704030097</td>
           <td class="col-model"><span class="lnk" data-ref="704030097">LT240</span></td>
           <td class="col-name">LT240底板式双柱举升机海外配置  LT240 Floor-mounted Two-post Lift, Overseas Configuration</td>
           <td class="col-price">$950</td>
         </tr>
-        <tr id="det-704030097" class="row-detail">
+        <tr id="det-704030097" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2060,14 +2058,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030121" class="row-prod" data-ref="704030121">
+        <tr id="row-704030121" class="row-prod" data-ref="704030121" onclick="toggleDetail('704030121')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3627xuch2q.webp" loading="lazy"></td>
           <td class="col-code">704030121</td>
           <td class="col-model"><span class="lnk" data-ref="704030121">LT240C</span></td>
           <td class="col-name">LT240C龙门式双柱举升机海外配置  LT240C Gantry Two-post Lift, Overseas Configuration</td>
           <td class="col-price">$980</td>
         </tr>
-        <tr id="det-704030121" class="row-detail">
+        <tr id="det-704030121" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2088,14 +2086,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030145" class="row-prod" data-ref="704030145">
+        <tr id="row-704030145" class="row-prod" data-ref="704030145" onclick="toggleDetail('704030145')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.b9js1ymq0.webp" loading="lazy"></td>
           <td class="col-code">704030145</td>
           <td class="col-model"><span class="lnk" data-ref="704030145">LT245</span></td>
           <td class="col-name">LT245底板式双柱举升机海外配置  LT245 Floor Plate Two-Post Lift, Export Configuration</td>
           <td class="col-price">$1,000</td>
         </tr>
-        <tr id="det-704030145" class="row-detail">
+        <tr id="det-704030145" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2116,14 +2114,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030169" class="row-prod" data-ref="704030169">
+        <tr id="row-704030169" class="row-prod" data-ref="704030169" onclick="toggleDetail('704030169')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1sfott3ybk.webp" loading="lazy"></td>
           <td class="col-code">704030169</td>
           <td class="col-model"><span class="lnk" data-ref="704030169">LT245C</span></td>
           <td class="col-name">LT245C龙门式双柱举升机海外配置  LT245C Gantry Two-Post Lift, Export Configuration</td>
           <td class="col-price">$1,030</td>
         </tr>
-        <tr id="det-704030169" class="row-detail">
+        <tr id="det-704030169" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2144,14 +2142,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030217" class="row-prod" data-ref="704030217">
+        <tr id="row-704030217" class="row-prod" data-ref="704030217" onclick="toggleDetail('704030217')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.67y3z2h93t.webp" loading="lazy"></td>
           <td class="col-code">704030217</td>
           <td class="col-model"><span class="lnk" data-ref="704030217">LT840T</span></td>
           <td class="col-name">LT840T超薄大剪举升机海外配置  LT840T Ultra-thin Big Scissor Lift, Export Configuration</td>
           <td class="col-price">$3,740</td>
         </tr>
-        <tr id="det-704030217" class="row-detail">
+        <tr id="det-704030217" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2172,14 +2170,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030225" class="row-prod" data-ref="704030225">
+        <tr id="row-704030225" class="row-prod" data-ref="704030225" onclick="toggleDetail('704030225')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3ns9mfisae.webp" loading="lazy"></td>
           <td class="col-code">704030225</td>
           <td class="col-model"><span class="lnk" data-ref="704030225">LT840</span></td>
           <td class="col-name">LT840地藏大剪举升机海外配置  LT840 Recessed Big Scissor Lift, Export Configuration</td>
           <td class="col-price">$3,090</td>
         </tr>
-        <tr id="det-704030225" class="row-detail">
+        <tr id="det-704030225" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2200,14 +2198,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030193" class="row-prod" data-ref="704030193">
+        <tr id="row-704030193" class="row-prod" data-ref="704030193" onclick="toggleDetail('704030193')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.70azgt07ei.webp" loading="lazy"></td>
           <td class="col-code">704030193</td>
           <td class="col-model"><span class="lnk" data-ref="704030193">LT445</span></td>
           <td class="col-name">LT445四柱举升机海外配置  LT445 Four-Post Lift, Export Configuration</td>
           <td class="col-price">$2,090</td>
         </tr>
-        <tr id="det-704030193" class="row-detail">
+        <tr id="det-704030193" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2228,14 +2226,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030249" class="row-prod" data-ref="704030249">
+        <tr id="row-704030249" class="row-prod" data-ref="704030249" onclick="toggleDetail('704030249')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.2kskbjosuo.webp" loading="lazy"></td>
           <td class="col-code">704030249</td>
           <td class="col-model"><span class="lnk" data-ref="704030249">LT636T</span></td>
           <td class="col-name">LT636T超薄小剪举升机海外配置  LT636T Ultra-thin Small Scissor Lift, Export Configuration</td>
           <td class="col-price">$1,870</td>
         </tr>
-        <tr id="det-704030249" class="row-detail">
+        <tr id="det-704030249" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2256,14 +2254,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030257" class="row-prod" data-ref="704030257">
+        <tr id="row-704030257" class="row-prod" data-ref="704030257" onclick="toggleDetail('704030257')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5fl8hc4t3a.webp" loading="lazy"></td>
           <td class="col-code">704030257</td>
           <td class="col-model"><span class="lnk" data-ref="704030257">LT640T</span></td>
           <td class="col-name">LT640T超薄小剪举升机海外配置  LT640T Ultra-thin Small Scissor Lift, Export Configuration</td>
           <td class="col-price">$2,120</td>
         </tr>
-        <tr id="det-704030257" class="row-detail">
+        <tr id="det-704030257" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2284,14 +2282,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704030265" class="row-prod" data-ref="704030265">
+        <tr id="row-704030265" class="row-prod" data-ref="704030265" onclick="toggleDetail('704030265')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.92qs4v1chv.webp" loading="lazy"></td>
           <td class="col-code">704030265</td>
           <td class="col-model"><span class="lnk" data-ref="704030265">LT640</span></td>
           <td class="col-name">LT640地藏小剪举升机海外配置  LT640 Recessed Small Scissor Lift, Export Configuration</td>
           <td class="col-price">$1,380</td>
         </tr>
-        <tr id="det-704030265" class="row-detail">
+        <tr id="det-704030265" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2326,14 +2324,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
     <table>
       <thead><tr><th style="width:60px"></th><th style="width:80px">Код</th><th style="width:100px">Модель</th><th>Описание</th><th style="width:90px;text-align:right">Цена (USD)</th></tr></thead>
       <tbody>
-        <tr id="row-704050016" class="row-prod" data-ref="704050016">
+        <tr id="row-704050016" class="row-prod" data-ref="704050016" onclick="toggleDetail('704050016')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.32im04stql.webp" loading="lazy"></td>
           <td class="col-code">704050016</td>
           <td class="col-model"><span class="lnk" data-ref="704050016">TC191</span></td>
           <td class="col-name">TC191 摇臂式简易左辅助臂轮胎拆装机（220V 0.75kW 纯铜电机） TC191 Swing Arm Simple Left Assist Arm Tire Changer (220V 0.7...</td>
           <td class="col-price">$580</td>
         </tr>
-        <tr id="det-704050016" class="row-detail">
+        <tr id="det-704050016" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2354,14 +2352,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704050020" class="row-prod" data-ref="704050020">
+        <tr id="row-704050020" class="row-prod" data-ref="704050020" onclick="toggleDetail('704050020')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.6m4jpxwcqt.webp" loading="lazy"></td>
           <td class="col-code">704050020</td>
           <td class="col-model"><span class="lnk" data-ref="704050020">TC193</span></td>
           <td class="col-name">TC193 后仰式豪华右辅助臂轮胎拆装机（220V 0.75kW 纯铜电机） TC193 Reclining Luxury Right Assist Arm Tire Changer (220V 0....</td>
           <td class="col-price">$1,000</td>
         </tr>
-        <tr id="det-704050020" class="row-detail">
+        <tr id="det-704050020" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2382,14 +2380,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704050024" data-ref="704050024">
+        <tr id="row-704050024" data-ref="704050024" onclick="toggleDetail('704050024')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5fl8hc8ldr.webp" loading="lazy"></td>
           <td class="col-code">704050024</td>
           <td class="col-model"><span class="lnk" data-ref="704050024">TC195</span></td>
           <td class="col-name">TC195 半自动免撬棍轮胎拆装机（220V 0.75kW 纯铜电机） TC195 Semi-Automatic No-Pry Bar Tire Changer (220V 0.75kW Pure C...</td>
           <td class="col-price">$1,700</td>
         </tr>
-<tr id="det-704050024" class="row-detail">
+<tr id="det-704050024" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2406,14 +2404,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704050052" class="row-prod" data-ref="704050052">
+        <tr id="row-704050052" class="row-prod" data-ref="704050052" onclick="toggleDetail('704050052')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.et5ps3fjc.webp" loading="lazy"></td>
           <td class="col-code">704050052</td>
           <td class="col-model"><span class="lnk" data-ref="704050052">TB291</span></td>
           <td class="col-name">TB291 标准型LED轮胎平衡机（220V 0.25kW 纯铜电机） TB291 Standard LED Wheel Balancer (220V 0.25kW Pure Copper Motor...</td>
           <td class="col-price">$370</td>
         </tr>
-        <tr id="det-704050052" class="row-detail">
+        <tr id="det-704050052" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2434,14 +2432,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704050054" class="row-prod" data-ref="704050054">
+        <tr id="row-704050054" class="row-prod" data-ref="704050054" onclick="toggleDetail('704050054')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1ow2w3mp7r.webp" loading="lazy"></td>
           <td class="col-code">704050054</td>
           <td class="col-model"><span class="lnk" data-ref="704050054">TB293</span></td>
           <td class="col-name">TB293 智能型LCD轮胎平衡机（220V 0.25kW 纯铜电机） TB291 Standard LED Wheel Balancer (220V 0.25kW Pure Copper Motor...</td>
           <td class="col-price">$990</td>
         </tr>
-        <tr id="det-704050054" class="row-detail">
+        <tr id="det-704050054" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2462,14 +2460,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-702030017" class="row-prod" data-ref="702030017">
+        <tr id="row-702030017" class="row-prod" data-ref="702030017" onclick="toggleDetail('702030017')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1lcgkbvdrq.webp" loading="lazy"></td>
           <td class="col-code">702030017</td>
           <td class="col-model"><span class="lnk" data-ref="702030017">TTM313</span></td>
           <td class="col-name">TTM313手持式胎纹检测仪海外配置(欧规) TTM313 Handheld Tire Tread Depth Gauge, EU Specification Version</td>
           <td class="col-price">$280</td>
         </tr>
-        <tr id="det-702030017" class="row-detail">
+        <tr id="det-702030017" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2503,14 +2501,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
     <table>
       <thead><tr><th style="width:60px"></th><th style="width:80px">Код</th><th style="width:100px">Модель</th><th>Описание</th><th style="width:90px;text-align:right">Цена (USD)</th></tr></thead>
       <tbody>
-        <tr id="row-704020214" class="row-prod" data-ref="704020214">
+        <tr id="row-704020214" class="row-prod" data-ref="704020214" onclick="toggleDetail('704020214')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3k8np07g8u.webp" loading="lazy"></td>
           <td class="col-code">704020214</td>
           <td class="col-model"><span class="lnk" data-ref="704020214">TT116</span></td>
           <td class="col-name">TT116新能源绝缘工具车组套（含7层工具车） TT116 New Energy Insulated Tool Cart Set (with 7-Drawer Tool Cart)</td>
           <td class="col-price">$1,150</td>
         </tr>
-        <tr id="det-704020214" class="row-detail">
+        <tr id="det-704020214" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2531,14 +2529,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704020212" class="row-prod" data-ref="704020212">
+        <tr id="row-704020212" class="row-prod" data-ref="704020212" onclick="toggleDetail('704020212')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.46bwwynhz.webp" loading="lazy"></td>
           <td class="col-code">704020212</td>
           <td class="col-model"><span class="lnk" data-ref="704020212">MPT-100</span></td>
           <td class="col-name">MPT-100多用途编程电源工具车 MPT-100 Multi-Purpose Programming Power Tool Cart</td>
           <td class="col-price">$169</td>
         </tr>
-        <tr id="det-704020212" class="row-detail">
+        <tr id="det-704020212" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2559,14 +2557,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704020225" data-ref="704020225">
+        <tr id="row-704020225" data-ref="704020225" onclick="toggleDetail('704020225')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.4n8cydcxal.webp" loading="lazy"></td>
           <td class="col-code">704020225</td>
           <td class="col-model"><span class="lnk" data-ref="704020225">TT430</span></td>
           <td class="col-name">TT430 机修工具车组套(含7层工具车)海外配置 TT430 Mechanical Repair Tool Cart Set (with 7-Drawer Tool Cart) Overseas C...</td>
           <td class="col-price">$720</td>
         </tr>
-<tr id="det-704020225" class="row-detail">
+<tr id="det-704020225" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2583,14 +2581,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704010017" class="row-prod" data-ref="704010017">
+        <tr id="row-704010017" class="row-prod" data-ref="704010017" onclick="toggleDetail('704010017')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1ow1i3c13s.webp" loading="lazy"></td>
           <td class="col-code">704010017</td>
           <td class="col-model"><span class="lnk" data-ref="704010017">ACR716</span></td>
           <td class="col-name">ACR716冷却液清洗更换机海外配置  Overseas Configuration of ACR716 Coolant Flush & Exchange Machine</td>
           <td class="col-price">$260</td>
         </tr>
-        <tr id="det-704010017" class="row-detail">
+        <tr id="det-704010017" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2611,14 +2609,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704010018" class="row-prod" data-ref="704010018">
+        <tr id="row-704010018" class="row-prod" data-ref="704010018" onclick="toggleDetail('704010018')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3ns8ifculx.webp" loading="lazy"></td>
           <td class="col-code">704010018</td>
           <td class="col-model"><span class="lnk" data-ref="704010018">ACR719</span></td>
           <td class="col-name">ACR719冷却液清洗更换机海外配置  Overseas Configuration of ACR719 Coolant Flush & Exchange Machine</td>
           <td class="col-price">$385</td>
         </tr>
-        <tr id="det-704010018" class="row-detail">
+        <tr id="det-704010018" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2639,14 +2637,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704040009" class="row-prod" data-ref="704040009">
+        <tr id="row-704040009" class="row-prod" data-ref="704040009" onclick="toggleDetail('704040009')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3gp0mzrlb0.webp" loading="lazy"></td>
           <td class="col-code">704040009</td>
           <td class="col-model"><span class="lnk" data-ref="704040009">BC713</span></td>
           <td class="col-name">BC713刹车油更换机海外配置(220V,欧标)  BC713 Brake Oil Changer, Overseas Configuration (220V, EU Standard)</td>
           <td class="col-price">$260</td>
         </tr>
-        <tr id="det-704040009" class="row-detail">
+        <tr id="det-704040009" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2667,14 +2665,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704040016" data-ref="704040016">
+        <tr id="row-704040016" data-ref="704040016" onclick="toggleDetail('704040016')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.lwdli4mge.webp" loading="lazy"></td>
           <td class="col-code">704040016</td>
           <td class="col-model"><span class="lnk" data-ref="704040016">DCR816</span></td>
           <td class="col-name">DCR816干冰除碳机海外配置（220V，欧标）  DCR816 Dry Ice Carbon Cleaning Machine, Overseas Configuration (220V, EU S...</td>
           <td class="col-price">$900</td>
         </tr>
-<tr id="det-704040016" class="row-detail">
+<tr id="det-704040016" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2691,14 +2689,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704040020" data-ref="704040020">
+        <tr id="row-704040020" data-ref="704040020" onclick="toggleDetail('704040020')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.60uw3xkjgb.webp" loading="lazy"></td>
           <td class="col-code">704040020</td>
           <td class="col-model"><span class="lnk" data-ref="704040020">WCR813</span></td>
           <td class="col-name">WCR813 核桃砂除碳机海外配置（220V，欧标）  WCR813 Walnut Shell Carbon Cleaning Machine, Overseas Configuration (220...</td>
           <td class="col-price">$300</td>
         </tr>
-<tr id="det-704040020" class="row-detail">
+<tr id="det-704040020" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2715,14 +2713,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704040023" data-ref="704040023">
+        <tr id="row-704040023" data-ref="704040023" onclick="toggleDetail('704040023')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.1ow2we28kt.webp" loading="lazy"></td>
           <td class="col-code">704040023</td>
           <td class="col-model"><span class="lnk" data-ref="704040023">ELC819</span></td>
           <td class="col-name">ELC819发动机润滑油道清洗设备（12V）  ELC819 Engine Oil Passage Cleaning Equipment (12V)</td>
           <td class="col-price">$360</td>
         </tr>
-<tr id="det-704040023" class="row-detail">
+<tr id="det-704040023" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2739,14 +2737,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704080006" class="row-prod" data-ref="704080006">
+        <tr id="row-704080006" class="row-prod" data-ref="704080006" onclick="toggleDetail('704080006')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.7ehf4s31j3.webp" loading="lazy"></td>
           <td class="col-code">704080006</td>
           <td class="col-model"><span class="lnk" data-ref="704080006">CRS310</span></td>
           <td class="col-name">CRS310汽车底盘道路模拟机海外配置(220V,固定款) CRS310 Automobile Chassis Road Simulator, Overseas Configuration (220V...</td>
           <td class="col-price">$1,840</td>
         </tr>
-        <tr id="det-704080006" class="row-detail">
+        <tr id="det-704080006" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2767,14 +2765,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704080004" class="row-prod" data-ref="704080004">
+        <tr id="row-704080004" class="row-prod" data-ref="704080004" onclick="toggleDetail('704080004')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5mofh8wa4u.webp" loading="lazy"></td>
           <td class="col-code">704080004</td>
           <td class="col-model"><span class="lnk" data-ref="704080004">CRS410</span></td>
           <td class="col-name">CRS410汽车底盘道路模拟机海外配置(220V，旋转款,听诊器，应力释放器)  CRS410 Vehicle Chassis Road Simulator, Overseas Configurati...</td>
           <td class="col-price">$2,200</td>
         </tr>
-        <tr id="det-704080004" class="row-detail">
+        <tr id="det-704080004" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2795,14 +2793,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704080001" class="row-prod" data-ref="704080001">
+        <tr id="row-704080001" class="row-prod" data-ref="704080001" onclick="toggleDetail('704080001')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.icrnsedvz.webp" loading="lazy"></td>
           <td class="col-code">704080001</td>
           <td class="col-model"><span class="lnk" data-ref="704080001">704080001</span></td>
           <td class="col-name">YBT360彩屏蓄电池检测仪  Battery Tester with LCD Display</td>
           <td class="col-price">$23</td>
         </tr>
-        <tr id="det-704080001" class="row-detail">
+        <tr id="det-704080001" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2823,14 +2821,14 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
             </div>
           </td>
         </tr>
-        <tr id="row-704080002" class="row-prod" data-ref="704080002">
+        <tr id="row-704080002" class="row-prod" data-ref="704080002" onclick="toggleDetail('704080002')">
           <td class="col-img"><img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.b9jscslrq.webp" loading="lazy"></td>
           <td class="col-code">704080002</td>
           <td class="col-model"><span class="lnk" data-ref="704080002">704080002</span></td>
           <td class="col-name">YBT660彩屏蓄电池检测仪  Battery Tester with Printer</td>
           <td class="col-price">$58</td>
         </tr>
-        <tr id="det-704080002" class="row-detail">
+        <tr id="det-704080002" class="row-detail" style="display:none">
           <td colspan="5">
             <div class="detail-card">
               <div class="detail-img">
@@ -2857,32 +2855,23 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
 </div>
 
 <script>
-(function(){
-var openRow=null, openDet=null;
-function closeAll(){
-  if(openRow){openRow.classList.remove('expanded');openRow=null;}
-  if(openDet){openDet.classList.remove('expanded');openDet=null;}
+function toggleDetail(ref){
+  var row=document.getElementById('row-'+ref);
+  var det=document.getElementById('det-'+ref);
+  if(!det) return;
+  if(det.style.display==='table-row'){
+    det.style.display='none';
+    if(row) row.classList.remove('expanded');
+  } else {
+    // close any previously open
+    var prevRow=document.querySelector('.row-prod.expanded');
+    if(prevRow) prevRow.classList.remove('expanded');
+    var prevDet=document.querySelector('.row-detail[style*="table-row"]');
+    if(prevDet) prevDet.style.display='none';
+    det.style.display='table-row';
+    if(row) row.classList.add('expanded');
+  }
 }
-document.querySelectorAll('.row-prod').forEach(function(row){
-  row.addEventListener('click',function(){
-    var ref=this.getAttribute('data-ref');
-    var det=document.getElementById('det-'+ref);
-    if(!det) return;
-    if(openRow===this){closeAll();return;}
-    closeAll();
-    this.classList.add('expanded');
-    det.classList.add('expanded');
-    openDet=det;
-    openRow=this;
-  });
-});
-document.querySelectorAll('.cat-head').forEach(function(h){
-  h.addEventListener('click',function(){
-    this.classList.toggle('collapsed');
-    this.nextElementSibling.classList.toggle('collapsed');
-  });
-});
-})();
 </script>
 
 </body>
