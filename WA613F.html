@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WA613F · Беспроводной 3D-стенд для смотровой ямы</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --wa613f:#C87A2C;        /* оранжевый цвет для не‑EV продукта */
+    --wa613f-light:#FDF3E8;
+    --text:#0A0A0A;
+    --sub:#555555;
+    --line:#D8D8D8;
+    --bg:#FFFFFF;
+    --swiss-red:#CC0000;
+    --swiss-grid:1px solid #D0D0D0;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#EBEBEB;
+    font-family:'IBM Plex Sans', sans-serif;
+    color:var(--text);
+    line-height:1.45;
+    padding:24px 16px;
+}
+.catalog{
+    max-width:1200px;
+    margin:0 auto;
+}
+.handbook{
+    background:#fff;
+    margin-bottom:0;
+    border:none;
+    border-top:1px solid #C8C8C8;
+    page-break-after:always;
+    break-after:page;
+    break-inside:avoid;
+    box-shadow:0 4px 12px rgba(0,0,0,0.03);
+}
+.product-page{
+    display:grid;
+    grid-template-columns:48px 1fr 1.35fr;
+    gap:0;
+    height:auto;
+    min-height:0;
+}
+.vertical-label-col{
+    border-right:var(--swiss-grid);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 0;
+    background:#FAFAFA;
+}
+.vertical-label{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    font-size:9px;
+    letter-spacing:3.5px;
+    font-weight:700;
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    color:var(--wa613f);
+}
+.vertical-index{
+    font-size:9px;
+    font-family:'IBM Plex Mono', monospace;
+    color:#BBBBBB;
+    letter-spacing:1px;
+}
+.product-image-col{
+    border-right:var(--swiss-grid);
+    display:flex;
+    flex-direction:column;
+    padding:32px 28px;
+    justify-content:space-between;
+}
+.product-image{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:280px;
+    margin-bottom:12px;
+}
+.product-image img{
+    width:100%;
+    max-height:300px;
+    object-fit:contain;
+}
+.image-caption{
+    margin-top:12px;
+    font-size:9px;
+    letter-spacing:1.5px;
+    color:#AAAAAA;
+    text-transform:uppercase;
+    font-family:'IBM Plex Mono', monospace;
+    text-align:center;
+    padding-top:10px;
+    border-top:1px solid var(--line);
+}
+.price-block{
+    margin-top:16px;
+    padding:12px 16px;
+    border:1px solid var(--line);
+    background:#FAFAFA;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+.price-label{
+    font-size:8px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#999999;
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+}
+.price-value{
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1;
+    color:var(--wa613f);
+}
+.price-divider{
+    width:24px;
+    height:2px;
+    background:var(--wa613f);
+    margin-top:2px;
+}
+.product-info{
+    padding:32px 36px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.top-meta{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-bottom:12px;
+    border-bottom:2px solid var(--text);
+    margin-bottom:20px;
+}
+.category-badge{
+    font-size:9px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--wa613f);
+}
+.product-number{
+    font-size:8px;
+    letter-spacing:1.2px;
+    color:#AAAAAA;
+    font-family:'IBM Plex Mono', monospace;
+}
+.product-title{
+    font-size:2.4rem;
+    font-weight:700;
+    letter-spacing:-0.03em;
+    line-height:1;
+    margin-bottom:8px;
+}
+.product-sub{
+    font-size:0.8rem;
+    color:#555555;
+    letter-spacing:0.01em;
+    font-weight:400;
+    line-height:1.4;
+    margin-bottom:14px;
+    padding-bottom:14px;
+    border-bottom:var(--swiss-grid);
+}
+.short-desc{
+    font-size:0.8rem;
+    line-height:1.55;
+    color:#2A2A2A;
+    margin-bottom:14px;
+    max-width:100%;
+}
+.tech-tags{
+    font-size:9px;
+    line-height:2;
+    letter-spacing:0.8px;
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    text-transform:uppercase;
+    padding:10px 0;
+    border-top:var(--swiss-grid);
+    border-bottom:var(--swiss-grid);
+    margin-bottom:16px;
+    color:var(--wa613f);
+}
+.specs-grid{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:0;
+    border:1px solid var(--line);
+    margin-bottom:18px;
+}
+.spec-label{
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#888888;
+    font-family:'IBM Plex Mono', monospace;
+    padding:8px 12px;
+    border-bottom:1px solid var(--line);
+    border-right:1px solid var(--line);
+    background:#FAFAFA;
+    display:flex;
+    align-items:center;
+}
+.spec-value{
+    font-size:11px;
+    font-weight:600;
+    color:#0A0A0A;
+    font-family:'IBM Plex Mono', monospace;
+    padding:8px 12px;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    align-items:center;
+}
+.spec-label:last-of-type,
+.spec-value:last-of-type{
+    border-bottom:none;
+}
+.scenario-block{
+    padding:16px 18px;
+    border-left:3px solid;
+    margin-bottom:12px;
+    background:var(--wa613f-light);
+    border-left-color:var(--wa613f);
+}
+.scenario-title{
+    font-size:8px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-family:'IBM Plex Mono', monospace;
+    margin-bottom:8px;
+}
+.scenario-text{
+    font-size:0.75rem;
+    line-height:1.65;
+    color:#333333;
+}
+.footer-note{
+    margin-top:16px;
+    padding-top:10px;
+    border-top:var(--swiss-grid);
+    font-size:8px;
+    color:#AAAAAA;
+    letter-spacing:0.8px;
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+}
+@media print{
+    body{ background:#fff; padding:0; margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .catalog{ max-width:100%; margin:0; }
+    .handbook{ page-break-after:always; break-after:page; break-inside:avoid; box-shadow:none; margin:0; border-bottom:none; border-top:1px solid #ddd; }
+    .product-page{ min-height:0; height:auto; page-break-inside:avoid; }
+}
+</style>
+</head>
+<body>
+<div class="catalog">
+<div class="handbook">
+<div class="product-page">
+<div class="vertical-label-col">
+<span class="vertical-index">WA</span>
+<span class="vertical-label">Для смотровой ямы</span>
+<span class="vertical-index">613F</span>
+</div>
+<div class="product-image-col">
+<div class="product-image">
+<img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.5trnwrsot1.webp" alt="WA613F" loading="lazy">
+</div>
+<div class="image-caption">WA613F · Напольная установка · Для смотровой ямы</div>
+<div class="product-image" style="min-height:150px;">
+<img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3ns9kycdfg.webp" style="max-height:180px;" loading="lazy" alt="4-точ. тележка">
+</div>
+<div class="image-caption" style="margin-top:6px;">4-ТОЧЕЧНАЯ ТЕЛЕЖКА (702020154 · $245)</div>
+<div class="product-image" style="min-height:150px;">
+<img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.2kska2higv.webp" style="max-height:180px;" loading="lazy" alt="3-точ. тележка">
+</div>
+<div class="image-caption" style="margin-top:6px;">3-ТОЧЕЧНАЯ ТЕЛЕЖКА (702020155 · $285)</div>
+<div class="image-caption">WA613F · Измерение на полу · Идеален для ямы</div>
+<div class="price-block">
+<div class="price-label">Цена дилера (USD)</div>
+<div class="price-divider" style="width:24px;height:2px;background:var(--wa613f);margin:4px 0;"></div>
+<div class="price-small" style="font-size:10px;color:#666;font-family:IBM Plex Mono,monospace;">020136 (4-точ. ступичный): $5,000</div>
+<div class="price-small" style="font-size:10px;color:#666;font-family:IBM Plex Mono,monospace;">020141 (3-точ. шинный): $5,100</div>
+<div class="price-small" style="font-size:10px;color:#666;font-family:IBM Plex Mono,monospace;">020154 (4-точ. тележка): $245</div>
+<div class="price-small" style="font-size:10px;color:#666;font-family:IBM Plex Mono,monospace;">020155 (3-точ. тележка): $285</div>
+</div>
+</div>
+<div class="product-info">
+<div class="top-meta">
+<div class="category-badge">Беспроводной 3D-стенд для смотровой ямы</div>
+<div class="product-number">REF&nbsp;WA613F</div>
+</div>
+<div class="product-title">WA613F</div>
+<div class="product-sub">Магнитный беспроводной 3D-стенд — специально для смотровых ям</div>
+<div class="short-desc">
+Специальная напольная версия WA613 для смотровых ям. Не требует подъёмника — сенсорные блоки устанавливаются прямо на пол. Без балок, без калибровки. Два варианта зажимов: 4-точечный ступичный и 3-точечный шинный (для защиты дорогих дисков). Мобильные тележки — опционально.
+</div>
+<div class="tech-tags">
+&middot; Для смотровой ямы &nbsp;&nbsp;&middot; Магнитные блоки &nbsp;&nbsp;&middot; Без подъёмника &nbsp;&nbsp;&middot; Экономия места
+</div>
+<div class="specs-grid">
+<span class="spec-label">Схождение</span><span class="spec-value">±20°</span>
+<span class="spec-label">Развал</span><span class="spec-value">±10°</span>
+<span class="spec-label">Кастер</span><span class="spec-value">±20°</span>
+<span class="spec-label">Угол наклона шкворня</span><span class="spec-value">±20°</span>
+<span class="spec-label">Макс. угол поворота</span><span class="spec-value">±35°</span>
+<span class="spec-label">Колёсная база</span><span class="spec-value">1940–4600 мм</span>
+<span class="spec-label">Колея</span><span class="spec-value">1290–1900 мм</span>
+<span class="spec-label">Диаметр ступицы (4‑точ.)</span><span class="spec-value">275–640 мм</span>
+</div>
+<div class="scenario-block">
+<div class="scenario-title">WA613F vs WA613: В ЧЁМ РАЗНИЦА?</div>
+<div class="scenario-text">
+<strong>WA613F — напольная версия для смотровых ям.</strong> Блоки ставятся на пол по бокам ямы. Не нужен подъёмник. Идеально для гаражей с ямой вместо подъёмника.<br><br>
+<strong>WA613 — стандартная версия для подъёмников.</strong> Блоки крепятся магнитами на стойки подъёмника. Для цехов с двухстоечным/четырёхстоечным подъёмником.<br><br>
+<strong>Технические характеристики ОДИНАКОВЫ.</strong> Разница только в способе установки. Оба поддерживают 4-точечный ступичный и 3-точечный шинный зажимы.<br><br>
+<strong>Тележки для зажимов:</strong> мобильные стойки на колёсах для хранения и перемещения зажимных устройств между постами. Удобно, когда в цехе несколько подъёмников/ям.
+</div>
+</div></div>
+</div>
+<div class="footer-note">
+* Для смотровой ямы · 4-точ. и 3-точ. зажимы на выбор · Планшет ST13 в комплекте · Мобильные тележки опционально
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

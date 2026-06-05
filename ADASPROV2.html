@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>ADAS PRO+ V2 · Цифровой стенд калибровки ADAS</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --adas:#2B5B84;
+    --adas-light:#E9F0F6;
+    --text:#0A0A0A;
+    --sub:#555555;
+    --line:#D8D8D8;
+    --bg:#FFFFFF;
+    --swiss-red:#CC0000;
+    --swiss-grid:1px solid #D0D0D0;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#EBEBEB;
+    font-family:'IBM Plex Sans', sans-serif;
+    color:var(--text);
+    line-height:1.45;
+    padding:24px 16px;
+}
+.catalog{
+    max-width:1200px;
+    margin:0 auto;
+}
+.handbook{
+    background:#fff;
+    margin-bottom:0;
+    border:none;
+    border-top:1px solid #C8C8C8;
+    page-break-after:always;
+    break-after:page;
+    break-inside:avoid;
+    box-shadow:0 4px 12px rgba(0,0,0,0.03);
+}
+.product-page{
+    display:grid;
+    grid-template-columns:48px 1fr 1.35fr;
+    gap:0;
+    height:auto;
+    min-height:0;
+}
+.vertical-label-col{
+    border-right:var(--swiss-grid);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 0;
+    background:#FAFAFA;
+}
+.vertical-label{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    font-size:9px;
+    letter-spacing:3.5px;
+    font-weight:700;
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    color:var(--adas);
+}
+.vertical-index{
+    font-size:9px;
+    font-family:'IBM Plex Mono', monospace;
+    color:#BBBBBB;
+    letter-spacing:1px;
+}
+.product-image-col{
+    border-right:var(--swiss-grid);
+    display:flex;
+    flex-direction:column;
+    padding:32px 28px;
+    justify-content:space-between;
+}
+.product-image{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:280px;
+    margin-bottom:12px;
+}
+.product-image img{
+    width:100%;
+    max-height:300px;
+    object-fit:contain;
+}
+.image-caption{
+    margin-top:12px;
+    font-size:9px;
+    letter-spacing:1.5px;
+    color:#AAAAAA;
+    text-transform:uppercase;
+    font-family:'IBM Plex Mono', monospace;
+    text-align:center;
+    padding-top:10px;
+    border-top:1px solid var(--line);
+}
+.price-block{
+    margin-top:16px;
+    padding:12px 16px;
+    border:1px solid var(--line);
+    background:#FAFAFA;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+.price-label{
+    font-size:8px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#999999;
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+}
+.price-value{
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1;
+    color:var(--adas);
+}
+.price-divider{
+    width:24px;
+    height:2px;
+    background:var(--adas);
+    margin-top:2px;
+}
+.product-info{
+    padding:32px 36px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.top-meta{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-bottom:12px;
+    border-bottom:2px solid var(--text);
+    margin-bottom:20px;
+}
+.category-badge{
+    font-size:9px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--adas);
+}
+.product-number{
+    font-size:8px;
+    letter-spacing:1.2px;
+    color:#AAAAAA;
+    font-family:'IBM Plex Mono', monospace;
+}
+.product-title{
+    font-size:2.4rem;
+    font-weight:700;
+    letter-spacing:-0.03em;
+    line-height:1;
+    margin-bottom:8px;
+}
+.product-sub{
+    font-size:0.8rem;
+    color:#555555;
+    letter-spacing:0.01em;
+    font-weight:400;
+    line-height:1.4;
+    margin-bottom:14px;
+    padding-bottom:14px;
+    border-bottom:var(--swiss-grid);
+}
+.short-desc{
+    font-size:0.8rem;
+    line-height:1.55;
+    color:#2A2A2A;
+    margin-bottom:14px;
+    max-width:100%;
+}
+.tech-tags{
+    font-size:9px;
+    line-height:2;
+    letter-spacing:0.8px;
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    text-transform:uppercase;
+    padding:10px 0;
+    border-top:var(--swiss-grid);
+    border-bottom:var(--swiss-grid);
+    margin-bottom:16px;
+    color:var(--adas);
+}
+.specs-grid{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:0;
+    border:1px solid var(--line);
+    margin-bottom:18px;
+}
+.spec-label{
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#888888;
+    font-family:'IBM Plex Mono', monospace;
+    padding:8px 12px;
+    border-bottom:1px solid var(--line);
+    border-right:1px solid var(--line);
+    background:#FAFAFA;
+    display:flex;
+    align-items:center;
+}
+.spec-value{
+    font-size:11px;
+    font-weight:600;
+    color:#0A0A0A;
+    font-family:'IBM Plex Mono', monospace;
+    padding:8px 12px;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    align-items:center;
+}
+.spec-label:last-of-type,
+.spec-value:last-of-type{
+    border-bottom:none;
+}
+.scenario-block{
+    padding:16px 18px;
+    border-left:3px solid;
+    margin-bottom:12px;
+    background:var(--adas-light);
+    border-left-color:var(--adas);
+}
+.scenario-title{
+    font-size:8px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-family:'IBM Plex Mono', monospace;
+    margin-bottom:8px;
+}
+.scenario-text{
+    font-size:0.75rem;
+    line-height:1.65;
+    color:#333333;
+}
+.footer-note{
+    margin-top:16px;
+    padding-top:10px;
+    border-top:var(--swiss-grid);
+    font-size:8px;
+    color:#AAAAAA;
+    letter-spacing:0.8px;
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+}
+@media print{
+    body{ background:#fff; padding:0; margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .catalog{ max-width:100%; margin:0; }
+    .handbook{ page-break-after:always; break-after:page; break-inside:avoid; box-shadow:none; margin:0; border-bottom:none; border-top:1px solid #ddd; }
+    .product-page{ min-height:0; height:auto; page-break-inside:avoid; }
+}
+</style>
+</head>
+<body>
+<div class="catalog">
+<div class="handbook">
+<div class="product-page adas">
+<div class="vertical-label-col">
+<span class="vertical-index">ADAS</span>
+<span class="vertical-label">Цифровая калибровка</span>
+<span class="vertical-index">PRO+</span>
+</div>
+<div class="product-image-col">
+<div class="product-image">
+<img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.51esc8fxrj.webp" alt="ADAS PRO+ V2">
+</div>
+<div class="image-caption">ADAS PRO+ V2 · 4K-экран 75" · Цифровые мишени</div>
+<div class="price-block">
+<div class="price-label">Цена дилера</div>
+<div class="price-divider"></div>
+<div class="price-value">$ 4800</div>
+</div>
+</div>
+<div class="product-info">
+<div class="top-meta">
+<div class="category-badge">Цифровой стенд калибровки ADAS</div>
+<div class="product-number">REF&nbsp;ADAS PRO+ V2</div>
+</div>
+<div class="product-title">ADAS PRO+ V2</div>
+<div class="product-sub">Стенд для калибровки систем помощи водителю</div>
+<div class="short-desc">
+Встроенный 75" 4K-экран отображает цифровые мишени 1:1. Не требует физических мишеней.
+</div>
+<div class="tech-tags">
+&middot; Цифровые мишени &nbsp;&nbsp;&middot; 4K-экран 75" &nbsp;&nbsp;&middot; Лазерный дальномер &nbsp;&nbsp;&middot; Электроподъём
+</div>
+<div class="specs-grid">
+<span class="spec-label">Экран</span><span class="spec-value">75" ЖК, 4K (3840×2160)</span>
+<span class="spec-label">Мишени</span><span class="spec-value">30+ цифровых шаблонов</span>
+<span class="spec-label">Регулировка</span><span class="spec-value">Горизонт / вперёд-назад / влево-вправо</span>
+<span class="spec-label">Подъём</span><span class="spec-value">Электрический + ручной</span>
+<span class="spec-label">Позиционирование</span><span class="spec-value">Лазерный дальномер (мм)</span>
+<span class="spec-label">Соосность</span><span class="spec-value">Лазерная центровка, 1 минута</span>
+<span class="spec-label">Уровень</span><span class="spec-value">Регулируемые опоры</span>
+<span class="spec-label">ПО</span><span class="spec-value">Пошаговые инструкции + отчёт</span>
+</div>
+<div class="scenario-block">
+<div class="scenario-title">ПРЕИМУЩЕСТВА</div>
+<div class="scenario-text">
+75" 4K-экран заменяет физические мишени. · Центровка за 1 минуту · Электрический подъём · Лазерный дальномер (мм) · Пошаговые инструкции · Отчёт до/после.
+</div>
+</div>
+<div class="footer-note">
+* Цифровые мишени · 4K-экран · Лазерное позиционирование · Электрический подъём
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

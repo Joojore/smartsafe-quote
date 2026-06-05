@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WA613 · Беспроводной 3D-стенд развал-схождение</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+/* 完全复制样板示例的样式，不做任何改动 */
+:root{
+    --wa613:#3A6B4E;
+    --wa613-light:#EAF3EE;
+    --text:#0A0A0A;
+    --sub:#555555;
+    --line:#D8D8D8;
+    --bg:#FFFFFF;
+    --swiss-red:#CC0000;
+    --swiss-grid:1px solid #D0D0D0;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#EBEBEB;
+    font-family:'IBM Plex Sans', sans-serif;
+    color:var(--text);
+    line-height:1.45;
+    padding:24px 16px;
+}
+.catalog{
+    max-width:1200px;
+    margin:0 auto;
+}
+.handbook{
+    background:#fff;
+    margin-bottom:0;
+    border:none;
+    border-top:1px solid #C8C8C8;
+    page-break-after:always;
+    break-after:page;
+    break-inside:avoid;
+    box-shadow:0 4px 12px rgba(0,0,0,0.03);
+}
+.product-page{
+    display:grid;
+    grid-template-columns:48px 1fr 1.35fr;
+    gap:0;
+    height:auto;
+    min-height:0;
+}
+.vertical-label-col{
+    border-right:var(--swiss-grid);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 0;
+    background:#FAFAFA;
+}
+.vertical-label{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    font-size:9px;
+    letter-spacing:3.5px;
+    font-weight:700;
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    color:var(--wa613);
+}
+.vertical-index{
+    font-size:9px;
+    font-family:'IBM Plex Mono', monospace;
+    color:#BBBBBB;
+    letter-spacing:1px;
+}
+.product-image-col{
+    border-right:var(--swiss-grid);
+    display:flex;
+    flex-direction:column;
+    padding:32px 28px;
+    justify-content:space-between;
+}
+.product-image{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:280px;
+    margin-bottom:12px;
+}
+.product-image img{
+    width:100%;
+    max-height:300px;
+    object-fit:contain;
+}
+.image-caption{
+    margin-top:12px;
+    font-size:9px;
+    letter-spacing:1.5px;
+    color:#AAAAAA;
+    text-transform:uppercase;
+    font-family:'IBM Plex Mono', monospace;
+    text-align:center;
+    padding-top:10px;
+    border-top:1px solid var(--line);
+}
+.price-block{
+    margin-top:16px;
+    padding:12px 16px;
+    border:1px solid var(--line);
+    background:#FAFAFA;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+.price-label{
+    font-size:8px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#999999;
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+}
+.price-value{
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1;
+    color:var(--wa613);
+}
+.price-divider{
+    width:24px;
+    height:2px;
+    background:var(--wa613);
+    margin-top:2px;
+}
+.product-info{
+    padding:32px 36px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.top-meta{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-bottom:12px;
+    border-bottom:2px solid var(--text);
+    margin-bottom:20px;
+}
+.category-badge{
+    font-size:9px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--wa613);
+}
+.product-number{
+    font-size:8px;
+    letter-spacing:1.2px;
+    color:#AAAAAA;
+    font-family:'IBM Plex Mono', monospace;
+}
+.product-title{
+    font-size:2.4rem;
+    font-weight:700;
+    letter-spacing:-0.03em;
+    line-height:1;
+    margin-bottom:8px;
+}
+.product-sub{
+    font-size:0.8rem;
+    color:#555555;
+    letter-spacing:0.01em;
+    font-weight:400;
+    line-height:1.4;
+    margin-bottom:14px;
+    padding-bottom:14px;
+    border-bottom:var(--swiss-grid);
+}
+.short-desc{
+    font-size:0.8rem;
+    line-height:1.55;
+    color:#2A2A2A;
+    margin-bottom:14px;
+    max-width:100%;
+}
+.tech-tags{
+    font-size:9px;
+    line-height:2;
+    letter-spacing:0.8px;
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    text-transform:uppercase;
+    padding:10px 0;
+    border-top:var(--swiss-grid);
+    border-bottom:var(--swiss-grid);
+    margin-bottom:16px;
+    color:var(--wa613);
+}
+.specs-grid{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:0;
+    border:1px solid var(--line);
+    margin-bottom:18px;
+}
+.spec-label{
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#888888;
+    font-family:'IBM Plex Mono', monospace;
+    padding:8px 12px;
+    border-bottom:1px solid var(--line);
+    border-right:1px solid var(--line);
+    background:#FAFAFA;
+    display:flex;
+    align-items:center;
+}
+.spec-value{
+    font-size:11px;
+    font-weight:600;
+    color:#0A0A0A;
+    font-family:'IBM Plex Mono', monospace;
+    padding:8px 12px;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    align-items:center;
+}
+.spec-label:last-of-type,
+.spec-value:last-of-type{
+    border-bottom:none;
+}
+.scenario-block{
+    padding:16px 18px;
+    border-left:3px solid;
+    margin-bottom:12px;
+    background:var(--wa613-light);
+    border-left-color:var(--wa613);
+}
+.scenario-title{
+    font-size:8px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-family:'IBM Plex Mono', monospace;
+    margin-bottom:8px;
+}
+.scenario-text{
+    font-size:0.75rem;
+    line-height:1.65;
+    color:#333333;
+}
+.footer-note{
+    margin-top:16px;
+    padding-top:10px;
+    border-top:var(--swiss-grid);
+    font-size:8px;
+    color:#AAAAAA;
+    letter-spacing:0.8px;
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+}
+@media print{
+    body{ background:#fff; padding:0; margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .catalog{ max-width:100%; margin:0; }
+    .handbook{ page-break-after:always; break-after:page; break-inside:avoid; box-shadow:none; margin:0; border-bottom:none; border-top:1px solid #ddd; }
+    .product-page{ min-height:0; height:auto; page-break-inside:avoid; }
+}
+</style>
+</head>
+<body>
+<div class="catalog">
+<div class="handbook">
+<div class="product-page wa613">
+<div class="vertical-label-col">
+<span class="vertical-index">01</span>
+<span class="vertical-label">Беспроводная 3D-геометрия</span>
+<span class="vertical-index">WA613</span>
+</div>
+<div class="product-image-col">
+<div class="product-image">
+<img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.73ul07tn9h.webp" alt="WA613" loading="lazy">
+</div>
+<div class="image-caption">WA613 · 4-точечный ступичный зажим</div>
+<div class="product-image" style="min-height:150px;">
+<img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.3ns9kycdfg.webp" style="max-height:180px;" loading="lazy" alt="4-точ. тележка">
+</div>
+<div class="image-caption" style="margin-top:6px;">4-ТОЧЕЧНАЯ ТЕЛЕЖКА (702020154 · $245) — стойка для зажимов</div>
+<div class="product-image" style="min-height:150px;">
+<img src="https://github.com/Joojore/picx-images-hosting/raw/master/image.2kska2higv.webp" style="max-height:180px;" loading="lazy" alt="3-точ. тележка">
+</div>
+<div class="image-caption" style="margin-top:6px;">3-ТОЧЕЧНАЯ ТЕЛЕЖКА (702020155 · $285) — стойка для зажимов</div>
+<div class="image-caption">WA613 · Магнитные блоки · Безбалковая конструкция</div>
+<div class="price-block">
+<div class="price-label">Цена дилера</div>
+<div class="price-divider"></div>
+<div class="price-value">$ 5100</div>
+</div>
+</div>
+<div class="product-info">
+<div class="top-meta">
+<div class="category-badge">Беспроводной 3D-стенд</div>
+<div class="product-number">REF&nbsp;WA613</div>
+</div>
+<div class="product-title">WA613</div>
+<div class="product-sub">Магнитный беспроводной 3D-стенд развал-схождение</div>
+<div class="short-desc">
+Первый в мире магнитный 3D-стенд. Работает прямо из коробки — ноль сборки, ноль калибровки. Без балок и стоек: сенсорные блоки крепятся магнитами на подъёмник. Две версии зажимов: 4-точечный ступичный (для стандартных дисков) и 3-точечный шинный (для защиты дорогих дисков от царапин).
+</div>
+<div class="tech-tags">
+&middot; Магнитные блоки &nbsp;&nbsp;&middot; Готов к работе &nbsp;&nbsp;&middot; Беспроводная связь &nbsp;&nbsp;&middot; Экономия места
+</div>
+<div class="specs-grid">
+<span class="spec-label">Схождение</span><span class="spec-value">±20°</span>
+<span class="spec-label">Развал</span><span class="spec-value">±20°</span>
+<span class="spec-label">Кастер</span><span class="spec-value">±20°</span>
+<span class="spec-label">Угол наклона шкворня</span><span class="spec-value">±20°</span>
+<span class="spec-label">Макс. угол поворота</span><span class="spec-value">±35°</span>
+<span class="spec-label">Колёсная база</span><span class="spec-value">1940–4600 мм</span>
+<span class="spec-label">Колея</span><span class="spec-value">1290–1900 мм</span>
+<span class="spec-label">Диаметр ступицы (4‑точ.)</span><span class="spec-value">275–640 мм</span>
+<span class="spec-label">Диаметр шины (3‑точ.)</span><span class="spec-value">470–1100 мм</span>
+</div>
+<div class="scenario-block">
+<div class="scenario-title">КОНФИГУРАЦИИ И ОТЛИЧИЯ</div>
+<div class="scenario-text">
+<strong>4-точечный ступичный зажим (702020120 · $5,000):</strong> 4 когтя захватывают край диска. Жёсткая надёжная фиксация. Стандартный выбор для повседневных стальных и алюминиевых дисков.<br><br>
+<strong>3-точечный шинный зажим (702020121 · $5,100):</strong> 3 лапы обхватывают боковину шины. НОЛЬ контакта с поверхностью диска. Выбор для дорогих/кованых/полированных/коллекционных дисков (Porsche, BBS, HRE, Rays).<br><br>
+<strong>Мобильные тележки:</strong> стойки на колёсах для компактного хранения и перемещения зажимов между постами. 4-точечная ($245) и 3-точечная ($285).<br><br>
+<strong>WA613 vs WA861:</strong> WA613 — магнитный, без балки, открыл коробку и работает. WA861 — традиционная камера на балке, требует монтажа. WA613 в 2-3 раза компактнее, идеален для мобильного сервиса и тесных цехов.
+</div>
+</div></div>
+</div>
+<div class="footer-note">
+* 2 версии зажимов (4-точ./3-точ.) · Магнитная фиксация · Беспроводная связь · 2 коробки · Мобильные тележки опционально
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
