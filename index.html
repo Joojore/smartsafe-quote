@@ -78,7 +78,7 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
 </div>
 
 <div class="cat-section">
-  <div class="cat-head" style="background:#1E3A5F;" data-cat="3d_align">
+  <div class="cat-head" onclick="toggleCat(this)" style="background:#1E3A5F;" data-cat="3d_align">
     <span>3D РАЗВАЛ-СХОЖДЕНИЕ (25)</span>
     <span class="ch-arrow">▾</span>
   </div>
@@ -689,7 +689,7 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
 </div>
 
 <div class="cat-section">
-  <div class="cat-head" style="background:#0F766E;" data-cat="ev">
+  <div class="cat-head" onclick="toggleCat(this)" style="background:#0F766E;" data-cat="ev">
     <span>EV ДИАГНОСТИКА И ОБСЛУЖИВАНИЕ (31)</span>
     <span class="ch-arrow">▾</span>
   </div>
@@ -1473,7 +1473,7 @@ ECC03 — бесконтактный AC/DC токоизмерительный к
 </div>
 
 <div class="cat-section">
-  <div class="cat-head" style="background:#6D28D9;" data-cat="adas">
+  <div class="cat-head" onclick="toggleCat(this)" style="background:#6D28D9;" data-cat="adas">
     <span>ADAS КАЛИБРОВКА (18)</span>
     <span class="ch-arrow">▾</span>
   </div>
@@ -1951,7 +1951,7 @@ ADAS ECO Overseas Standard Configuration — оптимальное решени
 </div>
 
 <div class="cat-section">
-  <div class="cat-head" style="background:#B45309;" data-cat="lifting">
+  <div class="cat-head" onclick="toggleCat(this)" style="background:#B45309;" data-cat="lifting">
     <span>ПОДЪЁМНОЕ ОБОРУДОВАНИЕ (16)</span>
     <span class="ch-arrow">▾</span>
   </div>
@@ -2407,7 +2407,7 @@ ADAS ECO Overseas Standard Configuration — оптимальное решени
 </div>
 
 <div class="cat-section">
-  <div class="cat-head" style="background:#B91C1C;" data-cat="tire">
+  <div class="cat-head" onclick="toggleCat(this)" style="background:#B91C1C;" data-cat="tire">
     <span>ШИНОМОНТАЖ (6)</span>
     <span class="ch-arrow">▾</span>
   </div>
@@ -2584,7 +2584,7 @@ TB293 — интеллектуальный балансировочный ста
 </div>
 
 <div class="cat-section">
-  <div class="cat-head" style="background:#7C3AED;" data-cat="service">
+  <div class="cat-head" onclick="toggleCat(this)" style="background:#7C3AED;" data-cat="service">
     <span>СЕРВИС И ДИАГНОСТИКА (13)</span>
     <span class="ch-arrow">▾</span>
   </div>
@@ -2900,6 +2900,10 @@ ELC819 — профессиональное оборудование для оч
 </div>
 
 <script>
+function toggleCat(el){
+  el.classList.toggle('collapsed');
+  el.nextElementSibling.classList.toggle('collapsed');
+}
 function toggleDetail(ref){
   var row=document.getElementById('row-'+ref);
   var det=document.getElementById('det-'+ref);
