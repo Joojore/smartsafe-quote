@@ -16,9 +16,10 @@ body{background:#F0F0F0;font-family:'IBM Plex Sans',sans-serif;color:#0A0A0A;lin
 .cat-head{padding:14px 24px;font-size:10px;letter-spacing:2.5px;font-weight:700;font-family:'IBM Plex Mono',monospace;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none;}
 .cat-head .ch-arrow{font-size:14px;transition:transform 0.2s;}
 .cat-head.collapsed .ch-arrow{transform:rotate(-90deg);}
-.cat-body{background:#fff;overflow:visible;}
+.cat-body{background:#fff;overflow-x:auto;}
 .cat-body.collapsed{display:none;}
-table{width:100%;border-collapse:collapse;}
+.cat-body table{min-width:680px;}
+table{border-collapse:collapse;}
 thead th{font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:#999;font-family:'IBM Plex Mono',monospace;padding:12px 16px;text-align:left;border-bottom:1px solid #E0E0E0;background:#FAFAFA;}
 tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertical-align:middle;}
 .col-img{width:60px;text-align:center;}
@@ -70,6 +71,25 @@ tbody td{padding:10px 16px;border-bottom:1px solid #F0F0F0;font-size:13px;vertic
 .quote-header{border-bottom:2px solid #000;}
 .cat-body.collapsed{display:block!important;}
 .row-detail{display:table-row!important;}}
+@media(max-width:768px){
+  body{padding:8px 4px;}
+  .quote-header{padding:20px 16px;}
+  .quote-header h1{font-size:1.4rem;}
+  .cat-head{padding:12px 16px;font-size:9px;}
+  thead th{padding:8px 6px;font-size:7px;}
+  tbody td{padding:8px 6px;font-size:11px;}
+  .col-img{width:40px;}
+  .col-img img{max-width:36px;max-height:36px;}
+  .col-code{width:60px;font-size:9px;}
+  .col-model{width:70px;font-size:12px;}
+  .col-name{font-size:10px;min-width:140px;}
+  .col-price{width:65px;font-size:12px;}
+  .detail-card{flex-direction:column;gap:12px;padding:14px 16px;}
+  .detail-img{flex:0 0 auto;min-height:100px;}
+  .detail-info h3{font-size:1rem;}
+  .detail-info .d-price{font-size:15px;}
+  .detail-specs{grid-template-columns:100px 1fr;font-size:9px;}
+}
 </style>
 </head>
 <body>
